@@ -1,0 +1,364 @@
+
+
+### Nouvel Arbre Structuré pour le Module Comptabilité-Finance
+
+```
+Module Comptabilité-Finance
+│
+├── Configuration
+│   ├── Paramètres Généraux
+│   │   ├── Devise
+│   │   ├── Exercice Comptable
+│   │   ├── Période Comptable
+│   │   ├── Journal Comptable
+│   │   └── Paramètres Avancés (TVA, Devise Secondaire, Taux de Change)
+│   │
+│   ├── Plan Comptable
+│   │   ├── Comptes Généraux
+│   │   │   ├── Numéro
+│   │   │   ├── Nom
+│   │   │   ├── Type (Actif, Passif, Produit, Charge)
+│   │   │   ├── Classe de Compte
+│   │   │   └── Solde
+│   │   │
+│   │   ├── Comptes Analytiques
+│   │   │   ├── Code
+│   │   │   ├── Nom
+│   │   │   ├── Responsable
+│   │   │   └── Budget
+│   │   │
+│   │   └── Classes de Comptes
+│   │       ├── Classe A
+│   │       ├── Classe B
+│   │       └── Classe C
+│   │
+│   └── Utilisateurs et Rôles
+│       ├── Utilisateurs
+│       │   ├── Nom
+│       │   ├── Email
+│       │   ├── Rôle
+│       │   └── Permissions
+│       │
+│       └── Rôles et Permissions
+│           ├── Comptable
+│           ├── Administrateur
+│           └── Lecteur
+│
+├── Comptabilité Générale
+│   ├── Saisie des Écritures Comptables
+│   │   ├── Écritures Manuelles
+│   │   │   ├── Date
+│   │   │   ├── Libellé
+│   │   │   ├── Montant
+│   │   │   ├── Compte Débit
+│   │   │   ├── Compte Crédit
+│   │   │   ├── Référence
+│   │   │   └── Pièce Justificative
+│   │   │
+│   │   ├── Écritures Automatiques
+│   │   │   ├── Factures Clients
+│   │   │   ├── Factures Fournisseurs
+│   │   │   ├── Paiements Clients
+│   │   │   └── Paiements Fournisseurs
+│   │   │
+│   │   └── Modèles d'Écritures
+│   │       ├── Modèle de Vente
+│   │       ├── Modèle d'Achat
+│   │       └── Modèle de Paiement
+│   │
+│   ├── Validation des Écritures
+│   │   ├── Validation Simple
+│   │   └── Validation Hiérarchique
+│   │
+│   ├── Lettrage des Écritures
+│   │   ├── Lettrage Manuel
+│   │   └── Lettrage Automatique
+│   │
+│   ├── Clôture des Écritures
+│   │   ├── Clôture Mensuelle
+│   │   └── Clôture Annuelle
+│   │
+│   └── Reporting
+│       ├── Bilan
+│       ├── Compte de Résultat
+│       ├── Grand Livre
+│       ├── Balance des Comptes
+│       └── Tableaux de Bord
+│
+├── Comptabilité Analytique
+│   ├── Gestion des Centres de Coûts
+│   │   ├── Création et Modification
+│   │   │   ├── Code
+│   │   │   ├── Nom
+│   │   │   ├── Responsable
+│   │   │   └── Budget
+│   │   │
+│   │   └── Hiérarchie des Centres de Coûts
+│   │       ├── Centre de Coût Parent
+│   │       └── Centres de Coût Enfants
+│   │
+│   ├── Saisie des Écritures Analytiques
+│   │   ├── Écritures Manuelles
+│   │   │   ├── Date
+│   │   │   ├── Libellé
+│   │   │   ├── Montant
+│   │   │   ├── Centre de Coût
+│   │   │   ├── Référence
+│   │   │   └── Pièce Justificative
+│   │   │
+│   │   └── Écritures Automatiques
+│   │       ├── Factures Clients
+│   │       ├── Factures Fournisseurs
+│   │       ├── Paiements Clients
+│   │       └── Paiements Fournisseurs
+│   │
+│   └── Reporting Analytique
+│       ├── Reporting par Centre de Coûts
+│       └── Reporting Croisé
+│
+├── Gestion des Budgets
+│   ├── Création des Budgets
+│   │   ├── Budgets Mensuels
+│   │   │   ├── Période
+│   │   │   ├── Montant
+│   │   │   └── Centre de Coût
+│   │   │
+│   │   └── Budgets Annuels
+│   │       ├── Période
+│   │       ├── Montant
+│   │       └── Centre de Coût
+│   │
+│   ├── Suivi des Budgets
+│   │   ├── Reporting de Suivi
+│   │   └── Alertes de Dépassement
+│   │
+│   └── Clôture des Budgets
+│       ├── Clôture Mensuelle
+│       └── Clôture Annuelle
+│
+├── Gestion des Factures
+│   ├── Saisie des Factures
+│   │   ├── Factures Clients
+│   │   │   ├── Numéro
+│   │   │   ├── Date
+│   │   │   ├── Montant
+│   │   │   ├── Client
+│   │   │   ├── Référence
+│   │   │   └── Pièce Justificative
+│   │   │
+│   │   └── Factures Fournisseurs
+│   │       ├── Numéro
+│   │       ├── Date
+│   │       ├── Montant
+│   │       ├── Fournisseur
+│   │       ├── Référence
+│   │       └── Pièce Justificative
+│   │
+│   ├── Validation des Factures
+│   │   ├── Validation Simple
+│   │   └── Validation Hiérarchique
+│   │
+│   ├── Paiement des Factures
+│   │   ├── Paiement Manuel
+│   │   └── Paiement Automatique
+│   │
+│   └── Reporting des Factures
+│       ├── Reporting par Client
+│       ├── Reporting par Fournisseur
+│       └── Reporting Croisé
+│
+├── Gestion des Paiements
+│   ├── Saisie des Paiements
+│   │   ├── Paiements Clients
+│   │   │   ├── Numéro
+│   │   │   ├── Date
+│   │   │   ├── Montant
+│   │   │   ├── Client
+│   │   │   ├── Référence
+│   │   │   └── Pièce Justificative
+│   │   │
+│   │   └── Paiements Fournisseurs
+│   │       ├── Numéro
+│   │       ├── Date
+│   │       ├── Montant
+│   │       ├── Fournisseur
+│   │       ├── Référence
+│   │       └── Pièce Justificative
+│   │
+│   ├── Validation des Paiements
+│   │   ├── Validation Simple
+│   │   └── Validation Hiérarchique
+│   │
+│   └── Reporting des Paiements
+│       ├── Reporting par Client
+│       ├── Reporting par Fournisseur
+│       └── Reporting Croisé
+│
+├── Intégration avec le CRM
+│   ├── Gestion des Clients et Fournisseurs
+│   │   ├── Création et Modification
+│   │   │   ├── Nom
+│   │   │   ├── Email
+│   │   │   ├── Adresse
+│   │   │   └── Numéro de Téléphone
+│   │   │
+│   │   └── Hiérarchie des Clients et Fournisseurs
+│   │       ├── Client Parent
+│   │       └── Clients Enfants
+│   │
+│   ├── Intégration des Factures et Paiements
+│   │   ├── Factures Clients
+│   │   ├── Factures Fournisseurs
+│   │   ├── Paiements Clients
+│   │   └── Paiements Fournisseurs
+│   │
+│   └── Reporting Croisé
+│       ├── Reporting par Client
+│       └── Reporting par Fournisseur
+│
+├── Intégration avec le GED
+│   ├── Stockage des Documents Comptables
+│   │   ├── Factures
+│   │   ├── Paiements
+│   │   └── Rapports
+│   │
+│   └── Gestion des Accès
+│       ├── Accès par Utilisateur
+│       └── Accès par Rôle
+│
+└── Sécurité et Conformité
+    ├── Authentification et Autorisation
+    │   ├── Authentification Multifacteur
+    │   └── Gestion des Rôles et Permissions
+    │
+    ├── Chiffrement des Données
+    │   ├── Chiffrement des Données en Transit
+    │   └── Chiffrement des Données au Repos
+    │
+    └── Conformité
+        ├── Conformité avec les Normes Comptables
+        └── Audits et Rapports
+```
+
+---
+
+### Explication de l'Arbre
+
+1. **Configuration** :
+   - **Paramètres Généraux** : Configuration des paramètres de base comme la devise, l'exercice comptable, etc., ainsi que des paramètres avancés comme la TVA, la devise secondaire et le taux de change.
+   - **Plan Comptable** : Gestion des comptes généraux, analytiques et des classes de comptes.
+   - **Utilisateurs et Rôles** : Gestion des utilisateurs et de leurs rôles et permissions.
+
+2. **Comptabilité Générale** :
+   - **Saisie des Écritures Comptables** : Saisie manuelle et automatique des écritures comptables, y compris les modèles d'écritures.
+   - **Validation des Écritures** : Validation simple et hiérarchique des écritures.
+   - **Lettrage des Écritures** : Lettrage manuel et automatique des écritures.
+   - **Clôture des Écritures** : Clôture mensuelle et annuelle des écritures.
+   - **Reporting** : Génération de rapports financiers comme le bilan, le compte de résultat, etc.
+
+3. **Comptabilité Analytique** :
+   - **Gestion des Centres de Coûts** : Création et modification des centres de coûts et leur hiérarchie.
+   - **Saisie des Écritures Analytiques** : Saisie manuelle et automatique des écritures analytiques.
+   - **Reporting Analytique** : Reporting par centre de coûts et reporting croisé.
+
+4. **Gestion des Budgets** :
+   - **Création des Budgets** : Création de budgets mensuels et annuels.
+   - **Suivi des Budgets** : Reporting de suivi et alertes de dépassement.
+   - **Clôture des Budgets** : Clôture mensuelle et annuelle des budgets.
+
+5. **Gestion des Factures** :
+   - **Saisie des Factures** : Saisie des factures clients et fournisseurs.
+   - **Validation des Factures** : Validation simple et hiérarchique des factures.
+   - **Paiement des Factures** : Paiement manuel et automatique des factures.
+   - **Reporting des Factures** : Reporting par client, fournisseur et reporting croisé.
+
+6. **Gestion des Paiements** :
+   - **Saisie des Paiements** : Saisie des paiements clients et fournisseurs.
+   - **Validation des Paiements** : Validation simple et hiérarchique des paiements.
+   - **Reporting des Paiements** : Reporting par client, fournisseur et reporting croisé.
+
+7. **Intégration avec le CRM** :
+   - **Gestion des Clients et Fournisseurs** : Création et modification des clients et fournisseurs et leur hiérarchie.
+   - **Intégration des Factures et Paiements** : Intégration des factures et paiements clients et fournisseurs.
+   - **Reporting Croisé** : Reporting croisé par client et fournisseur.
+
+8. **Intégration avec le GED** :
+   - **Stockage des Documents Comptables** : Stockage des documents comptables comme les factures, paiements, etc.
+   - **Gestion des Accès** : Gestion des accès par utilisateur et par rôle.
+
+9. **Sécurité et Conformité** :
+   - **Authentification et Autorisation** : Authentification multifacteur et gestion des rôles et permissions.
+   - **Chiffrement des Données** : Chiffrement des données en transit et au repos.
+   - **Conformité** : Conformité avec les normes comptables et audits et rapports.
+
+---
+
+### Exemple de Code pour une Fonctionnalité de Base
+
+Voici un exemple de code pour une fonctionnalité de base de gestion des comptes :
+
+```python
+class Compte:
+    def __init__(self, numero, nom, type_compte, classe_compte):
+        self.numero = numero
+        self.nom = nom
+        self.type_compte = type_compte
+        self.classe_compte = classe_compte
+        self.solde = 0.0
+        self.ecritures = []
+
+    def crediter(self, montant, ecriture):
+        self.solde += montant
+        self.ecritures.append(ecriture)
+
+    def debiter(self, montant, ecriture):
+        if self.solde >= montant:
+            self.solde -= montant
+            self.ecritures.append(ecriture)
+        else:
+            raise ValueError("Solde insuffisant")
+
+    def afficher_solde(self):
+        print(f"Le solde du compte {self.numero} est de {self.solde}")
+
+    def afficher_ecritures(self):
+        for ecriture in self.ecritures:
+            print(f"Date: {ecriture.date}, Libellé: {ecriture.libelle}, Montant: {ecriture.montant}")
+
+# Exemple d'utilisation
+compte1 = Compte("12345", "Compte Courant", "Actif", "Classe A")
+compte1.crediter(1000.0, {"date": "2023-10-01", "libelle": "Vente de produits", "montant": 1000.0})
+compte1.debiter(500.0, {"date": "2023-10-02", "libelle": "Paiement vente", "montant": 500.0})
+compte1.afficher_solde()
+compte1.afficher_ecritures()
+```
+
+---
+
+### Exemple de Test Unitaire
+
+Voici un exemple de test unitaire pour la classe `Compte` :
+
+```python
+import unittest
+
+class TestCompte(unittest.TestCase):
+    def setUp(self):
+        self.compte = Compte("12345", "Compte Courant", "Actif", "Classe A")
+
+    def test_crediter(self):
+        self.compte.crediter(1000.0, {"date": "2023-10-01", "libelle": "Vente de produits", "montant": 1000.0})
+        self.assertEqual(self.compte.solde, 1000.0)
+
+    def test_debiter(self):
+        self.compte.crediter(1000.0, {"date": "2023-10-01", "libelle": "Vente de produits", "montant": 1000.0})
+        self.compte.debiter(500.0, {"date": "2023-10-02", "libelle": "Paiement vente", "montant": 500.0})
+        self.assertEqual(self.compte.solde, 500.0)
+
+    def test_debiter_solde_insuffisant(self):
+        with self.assertRaises(ValueError):
+            self.compte.debiter(500.0, {"date": "2023-10-02", "libelle": "Paiement vente", "montant": 500.0})
+
+if __name__ == '__main__':
+    unittest.main()
+```

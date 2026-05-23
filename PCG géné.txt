@@ -1,0 +1,1059 @@
+N° du compte	Intitulé	Type de compte	A	V
+1	COMPTES DE CAPITAUX	Racine	Décoché	Décoché
+10	CAPITAL ET RESERVES	Racine	Décoché	Décoché
+1010000000	Capital	Racine	Décoché	Décoché
+1011000000	Capital souscrit - non appelé	Détail	Décoché	Décoché
+1012000000	Capital souscrit - appelé, non versé	Détail	Décoché	Décoché
+1013000000	Capital souscrit - appelé, versé	Racine	Décoché	Décoché
+1013100000	Capital non amorti	Détail	Décoché	Décoché
+1013200000	Capital amorti	Détail	Décoché	Décoché
+1018000000	Capital souscrit soumis à des réglementations particulières	Détail	Décoché	Décoché
+1040000000	Primes liées au capital social	Racine	Décoché	Décoché
+1041000000	Primes d'émission	Détail	Décoché	Décoché
+1042000000	Primes de fusion	Détail	Décoché	Décoché
+1043000000	Primes d'apport	Détail	Décoché	Décoché
+1044000000	Primes de conversion d'obligations en actions	Détail	Décoché	Décoché
+1045000000	Bons de souscription d'actions	Détail	Décoché	Décoché
+1050000000	Ecarts de réévaluation	Racine	Décoché	Décoché
+1051000000	Réserve spéciale de réévaluation	Détail	Décoché	Décoché
+1052000000	Ecart de réévaluation libre	Détail	Décoché	Décoché
+1053000000	Réserve de réévaluation	Détail	Décoché	Décoché
+1055000000	Ecarts de réévaluation (autres opérations légales)	Détail	Décoché	Décoché
+1057000000	Autres écarts de réévaluation en France	Détail	Décoché	Décoché
+1058000000	Autres écarts de réévaluation à l'étranger	Détail	Décoché	Décoché
+1060000000	Réserves	Racine	Décoché	Décoché
+1061000000	Réserve légale	Racine	Décoché	Décoché
+1061100000	Réserve légale proprement dite	Détail	Décoché	Décoché
+1061200000	Plus-values nettes à long terme	Détail	Décoché	Décoché
+1062000000	Réserves indisponibles	Détail	Décoché	Décoché
+1063000000	Réserves statutaires ou contractuelles	Détail	Décoché	Décoché
+1064000000	Réserves réglementées	Racine	Décoché	Décoché
+1064100000	Plus-values nettes à long terme	Détail	Décoché	Décoché
+1064300000	Réserves consécutives à l'octroi de subventions d'investiss.	Détail	Décoché	Décoché
+1064800000	Autres réserves réglementées	Détail	Décoché	Décoché
+1068000000	Autres réserves	Racine	Décoché	Décoché
+1068100000	Réserve de propre assureur	Détail	Décoché	Décoché
+1068800000	Réserves diverses	Détail	Décoché	Décoché
+1070000000	Ecart d'équivalence	Détail	Décoché	Décoché
+1080000000	COMPTE DE L'EXPLOITA	Détail	Décoché	Décoché
+1090000000	Actionnaires : Capital souscrit - non appelé	Détail	Décoché	Décoché
+11	REPORT A NOUVEAU (solde créditeur ou débiteur)	Racine	Décoché	Décoché
+1100000000	Report à nouveau (solde créditeur)	Détail	Décoché	Décoché
+1190000000	Report à nouveau (solde débiteur)	Détail	Décoché	Décoché
+12	RESULTAT DE L'EXERCICE (bénéfice ou perte)	Racine	Décoché	Décoché
+1200000000	RESULTAT DE L'EXERCICE  (BENEFICE)	Détail	Décoché	Décoché
+1290000000	Résultat de l'exercice (perte)	Détail	Décoché	Décoché
+13	SUBVENTIONS D'INVESTISSEMENT	Racine	Décoché	Décoché
+1310000000	Subventions d'équipement	Racine	Décoché	Décoché
+1311000000	Etat	Détail	Décoché	Décoché
+1312000000	Régions	Détail	Décoché	Décoché
+1313000000	Départements	Détail	Décoché	Décoché
+1314000000	Communes	Détail	Décoché	Décoché
+1315000000	Collectivités publiques	Détail	Décoché	Décoché
+1316000000	Entreprises publiques	Détail	Décoché	Décoché
+1317000000	Entreprises et organismes privés	Détail	Décoché	Décoché
+1318000000	Autres	Détail	Décoché	Décoché
+1380000000	Autres subventions d'investissement	Détail	Décoché	Décoché
+1390000000	Subventions d'investissement inscrites au compte de résultat	Racine	Décoché	Décoché
+1391000000	Subventions d'équipement	Racine	Décoché	Décoché
+1391100000	Etat	Détail	Décoché	Décoché
+1391200000	Régions	Détail	Décoché	Décoché
+1391300000	Départements	Détail	Décoché	Décoché
+1391400000	Communes	Détail	Décoché	Décoché
+1391500000	Collectivités publiques	Détail	Décoché	Décoché
+1391600000	Entreprises publiques	Détail	Décoché	Décoché
+1391700000	Entreprises et organismes privés	Détail	Décoché	Décoché
+1391800000	Autres	Détail	Décoché	Décoché
+1398000000	Autres subventions d'investissement	Détail	Décoché	Décoché
+14	PROVISIONS REGLEMENTEES	Racine	Décoché	Décoché
+1420000000	Provisions réglementées relatives aux immobilisations	Racine	Décoché	Décoché
+1423000000	Provisions pour reconstitution gisements miniers pétroliers	Détail	Décoché	Décoché
+1424000000	Provisions pour investissement (participation des salariés)	Détail	Décoché	Décoché
+1430000000	Provisions réglementées relatives aux stocks	Racine	Décoché	Décoché
+1431000000	Hausse des prix	Détail	Décoché	Décoché
+1432000000	Fluctuation des cours	Détail	Décoché	Décoché
+1440000000	Provisions réglementées relatives autres éléments de l'actif	Détail	Décoché	Décoché
+1450000000	Amortissements dérogatoires	Détail	Décoché	Décoché
+1460000000	Provision spéciale de réévaluation	Détail	Décoché	Décoché
+1470000000	Plus-values réinvesties	Détail	Décoché	Décoché
+1480000000	Autres provisions réglementées	Détail	Décoché	Décoché
+15	PROVISIONS	Racine	Décoché	Décoché
+1510000000	Provisions pour risques	Racine	Décoché	Décoché
+1511000000	Provisions pour litiges	Détail	Décoché	Décoché
+1512000000	Provisions pour garanties données aux clients	Détail	Décoché	Décoché
+1513000000	Provisions pour pertes sur marchés à terme	Détail	Décoché	Décoché
+1514000000	Provisions pour amendes et pénalités	Détail	Décoché	Décoché
+1515000000	Provisions pour pertes de change	Détail	Décoché	Décoché
+1516000000	Provisions pour pertes sur contrats	Détail	Décoché	Décoché
+1518000000	Autres provisions pour risques	Détail	Décoché	Décoché
+1530000000	Provisions pour pensions et obligations similaires	Détail	Décoché	Décoché
+1540000000	Provisions pour restructurations	Détail	Décoché	Décoché
+1550000000	Provisions pour impôts	Détail	Décoché	Décoché
+1560000000	Provisions pour renouvellement des immobilisations	Détail	Décoché	Décoché
+1570000000	Provisions pour charges à répartir sur plusieurs exercices	Racine	Décoché	Décoché
+1572000000	Provisions pour gros entretien ou grandes révisions	Détail	Décoché	Décoché
+1580000000	Autres provisions pour charges	Racine	Décoché	Décoché
+1581000000	Provisions pour remises en état	Détail	Décoché	Décoché
+16	EMPRUNTS ET DETTES ASSIMILEES	Racine	Décoché	Décoché
+1610000000	Emprunts obligataires convertibles	Détail	Décoché	Décoché
+1630000000	Autres emprunts obligataires	Détail	Décoché	Décoché
+1640000000	Emprunts auprès des établissements de crédit	Détail	Décoché	Décoché
+1650000000	Dépôts et cautionnements reçus	Racine	Décoché	Décoché
+1651000000	Dépôts	Détail	Décoché	Décoché
+1655000000	Cautionnements	Détail	Décoché	Décoché
+1660000000	Participation des salariés aux résultats	Racine	Décoché	Décoché
+1661000000	Comptes bloqués	Détail	Décoché	Décoché
+1662000000	Fonds de participation	Détail	Décoché	Décoché
+1670000000	Emprunts et dettes assortis de conditions particulières	Racine	Décoché	Décoché
+1671000000	Emissions de titres participatifs	Détail	Décoché	Décoché
+1674000000	Avances conditionnées de l'Etat	Détail	Décoché	Décoché
+1675000000	Emprunts participatifs	Détail	Décoché	Décoché
+1680000000	Autres emprunts et dettes assimilées	Racine	Décoché	Décoché
+1681000000	Autres emprunts	Détail	Décoché	Décoché
+1685000000	Rentes viagères capitalisées	Détail	Décoché	Décoché
+1687000000	Autres dettes	Détail	Décoché	Décoché
+1688000000	Intérêts courus	Racine	Décoché	Décoché
+1688100000	Sur emprunts obligataires convertibles	Détail	Décoché	Décoché
+1688300000	Sur autres emprunts obligataires	Détail	Décoché	Décoché
+1688400000	Sur emprunts auprès des établissements de crédit	Détail	Décoché	Décoché
+1688500000	Sur dépôts et cautionnements reçus	Détail	Décoché	Décoché
+1688600000	Sur participation des salariés aux résultats	Détail	Décoché	Décoché
+1688700000	Sur emprunts et dettes assortis de conditions particulières	Détail	Décoché	Décoché
+1688800000	Sur autres emprunts et dettes assimilées	Détail	Décoché	Décoché
+1690000000	Primes de remboursement des obligations	Détail	Décoché	Décoché
+17	DETTES RATTACHEES A DES PARTICIPATIONS	Racine	Décoché	Décoché
+1710000000	Dettes rattachées à des participations (groupe)	Détail	Décoché	Décoché
+1740000000	Dettes rattachées à des participations (hors groupe)	Détail	Décoché	Décoché
+1780000000	Dettes rattachées à des sociétés en participation	Racine	Décoché	Décoché
+1781000000	Principal	Détail	Décoché	Décoché
+1788000000	Intérêts courus	Détail	Décoché	Décoché
+18	COMPTES DE LIAISON DES ETABLISS. ET STES EN PARTICIPATION	Racine	Décoché	Décoché
+1810000000	Comptes de liaison des établissements	Détail	Décoché	Décoché
+1860000000	Biens et prestations échangés entre établiss. (charges)	Détail	Décoché	Décoché
+1870000000	Biens et prestations échangés entre établiss. (produits)	Détail	Décoché	Décoché
+1880000000	Comptes de liaison des sociétés en participation	Détail	Décoché	Décoché
+2	COMPTES D'IMMOBILISATIONS	Racine	Décoché	Décoché
+20	IMMOBILISATIONS INCORPORELLES	Racine	Décoché	Décoché
+2010000000	Frais d’établissement	Racine	Décoché	Décoché
+2011000000	Frais de constitution	Détail	Décoché	Décoché
+2012000000	Frais de premier établissement	Racine	Décoché	Décoché
+2012100000	Frais de prospection	Détail	Décoché	Décoché
+2012200000	Frais de publicité	Détail	Décoché	Décoché
+2013000000	Frais d'augmentation de capital et d'opérations diverses	Détail	Décoché	Décoché
+2030000000	Frais de recherche et de développement	Détail	Décoché	Décoché
+2050000000	Concessions et droits similaires, brevets, licences, marques	Détail	Décoché	Décoché
+2060000000	Droit au bail	Détail	Décoché	Décoché
+2070000000	Fonds commercial	Détail	Décoché	Décoché
+2080000000	Autres immobilisations incorporelles	Détail	Décoché	Décoché
+21	IMMOBILISATIONS CORPORELLES	Racine	Décoché	Décoché
+2110000000	Terrains	Racine	Décoché	Décoché
+2111000000	Terrains nus	Détail	Coché	Décoché
+2112000000	Terrains aménagés	Détail	Coché	Décoché
+2113000000	Sous-sols et sur-sols	Détail	Décoché	Décoché
+2114000000	Terrains de gisement	Racine	Décoché	Décoché
+2114100000	Carrières	Détail	Décoché	Décoché
+2115000000	Terrains bâtis	Racine	Décoché	Décoché
+2115100000	Ensembles immobiliers industriels (A, B...)	Détail	Décoché	Décoché
+2115500000	Ensembles immobiliers administratifs et commerciaux (A, B...	Détail	Décoché	Décoché
+2115800000	Autres ensembles immobiliers	Racine	Décoché	Décoché
+2115810000	Affectés aux opérations professionnelles (A, B ...)	Détail	Décoché	Décoché
+2115880000	Affectés aux opérations non professionnelles (A, B ...)	Détail	Décoché	Décoché
+2116000000	Comptes d'ordre sur immobilisations	Détail	Décoché	Décoché
+2120000000	Agencements et aménagements de terrains	Détail	Décoché	Décoché
+2130000000	Constructions	Racine	Décoché	Décoché
+2131000000	Bâtiments	Racine	Décoché	Décoché
+2131100000	Ensembles immobiliers industriels (A, B...)	Détail	Décoché	Décoché
+2131500000	Ensembles immobiliers administratifs et commerciaux (A,B..)	Détail	Décoché	Décoché
+2131800000	Autres ensembles immobiliers	Racine	Décoché	Décoché
+2131810000	Affectés aux opérations professsionnelles (A, B ...)	Détail	Décoché	Décoché
+2131880000	Affectés aux opérations non professionnelles (A, B ...)	Détail	Décoché	Décoché
+2135000000	Installations générales, agencements, aménagements	Détail	Décoché	Décoché
+2138000000	Ouvrages d'infrastructure	Racine	Décoché	Décoché
+2138100000	Voies de terre	Détail	Décoché	Décoché
+2138200000	Voies de fer	Détail	Décoché	Décoché
+2138300000	Voies d'eau	Détail	Décoché	Décoché
+2138400000	Barrages	Détail	Décoché	Décoché
+2138500000	Pistes d'aérodromes	Détail	Décoché	Décoché
+2140000000	Constructions sur sol d’autrui	Détail	Décoché	Décoché
+2150000000	Installations techniques, matériels et outillages industriel	Racine	Décoché	Décoché
+2151000000	Installations complexes spécialisées	Racine	Décoché	Décoché
+2151100000	Installations complexes spécialisées sur sol propre	Détail	Décoché	Décoché
+2151400000	Installations complexes spécialisées sur sol d'autrui	Détail	Décoché	Décoché
+2153000000	Installations à caractère spécifique	Racine	Décoché	Décoché
+2153100000	Installations à caractère spécifique sur sol propre	Détail	Décoché	Décoché
+2153400000	Installations à caractère spécifique sur sol d'autrui	Détail	Décoché	Décoché
+2154000000	Matériel industriel	Détail	Décoché	Décoché
+2155000000	Outillage industriel	Détail	Décoché	Décoché
+2157000000	Agencements et aménagements du matériel et outillages indust	Détail	Décoché	Décoché
+2180000000	Autres immobilisations corporelles	Racine	Décoché	Décoché
+2181000000	INST.AGENC.DIVERS	Détail	Coché	Décoché
+2182000000	Matériel de transport	Détail	Coché	Décoché
+2183000000	MAT.BUREAU & INFORMA	Détail	Coché	Décoché
+2184000000	Mobilier	Détail	Coché	Décoché
+2185000000	Cheptel	Détail	Décoché	Décoché
+2186000000	Emballages récupérables	Détail	Décoché	Décoché
+22	IMMOBILISATIONS MISES EN CONCESSION	Racine	Décoché	Décoché
+23	IMMOBILISATlONS EN COURS	Racine	Décoché	Décoché
+2310000000	Immobilisations corporelles en cours	Racine	Décoché	Décoché
+2312000000	Terrains	Détail	Décoché	Décoché
+2313000000	Constructions	Détail	Décoché	Décoché
+2315000000	Installations techniques, matériel et outillage industriels	Détail	Décoché	Décoché
+2318000000	En cours autr immob corporelle	Détail	Décoché	Décoché
+2320000000	Immobilisations incorporelles en cours	Détail	Décoché	Décoché
+2370000000	Avances et acomptes versés sur immobilisations incorporelles	Détail	Décoché	Décoché
+2380000000	Avances et acomptes versés sur immobilisations corporelles	Racine	Décoché	Décoché
+2382000000	Terrains	Détail	Décoché	Décoché
+2383000000	Constructions	Détail	Décoché	Décoché
+2385000000	Installations techniques, matériel et outillage industriels	Détail	Décoché	Décoché
+2388000000	Autres immobilisations corporelles	Détail	Décoché	Décoché
+25	PARTS DANS DES ENTREPRISES LIEES ET CREANCES RATTACHEES	Racine	Décoché	Décoché
+26	PARTICIPATIONS ET CREANCES RATTACHEES A DES PARTICIPATIONS	Racine	Décoché	Décoché
+2610000000	Titres de participation	Racine	Décoché	Décoché
+2611000000	Actions	Détail	Décoché	Décoché
+2618000000	Autres titres	Détail	Décoché	Décoché
+2660000000	Autres formes de participation	Détail	Décoché	Décoché
+2670000000	Créances rattachées à des participations	Racine	Décoché	Décoché
+2671000000	Créances rattachées à des participations (groupe)	Détail	Décoché	Décoché
+2674000000	Créances rattachées à des participations (hors groupe)	Détail	Décoché	Décoché
+2675000000	Versements représentatifs d'apports non capitalisés	Détail	Décoché	Décoché
+2676000000	Avances consolidables	Détail	Décoché	Décoché
+2677000000	Autres créances rattachées à des participations	Détail	Décoché	Décoché
+2678000000	Intérêts courus	Détail	Décoché	Décoché
+2680000000	Créances rattachées à des sociétés en participation	Racine	Décoché	Décoché
+2681000000	Principal	Détail	Décoché	Décoché
+2688000000	Intérêts courus	Détail	Décoché	Décoché
+2690000000	Versements restant sur titres de participation non libérés	Détail	Décoché	Décoché
+27	AUTRES IMMOBILISATIONS FINANCIERES	Racine	Décoché	Décoché
+2710000000	Titres immobilisés (droit de propriété)	Racine	Décoché	Décoché
+2711000000	Actions	Détail	Décoché	Décoché
+2718000000	Autres titres	Détail	Décoché	Décoché
+2720000000	Titres immobilisés (droit de créance)	Racine	Décoché	Décoché
+2721000000	Obligations	Détail	Décoché	Décoché
+2722000000	Bons	Détail	Décoché	Décoché
+2730000000	Titres immobilisés de l'activité de portefeuille	Détail	Décoché	Décoché
+2740000000	Prêts	Racine	Décoché	Décoché
+2741000000	Prêts participatifs	Détail	Décoché	Décoché
+2742000000	Prêts aux associés	Détail	Décoché	Décoché
+2743000000	Prêts au personnel	Détail	Décoché	Décoché
+2748000000	Autres prêts	Détail	Décoché	Décoché
+2750000000	Dépôt et cautionnement versés	Détail	Coché	Décoché
+2751000000	Dépôts	Détail	Décoché	Décoché
+2755000000	Cautionnements	Détail	Décoché	Décoché
+2760000000	Autres créances immobilisées	Racine	Décoché	Décoché
+2761000000	Créances diverses	Détail	Décoché	Décoché
+2768000000	Intérêts courus	Racine	Décoché	Décoché
+2768200000	Sur titres immobilisés (droit de créance)	Détail	Décoché	Décoché
+2768400000	Sur prêts	Détail	Décoché	Décoché
+2768500000	Sur dépôts et cautionnements	Détail	Décoché	Décoché
+2768800000	Sur créances diverses	Détail	Décoché	Décoché
+2770000000	Actions propres ou parts propres	Racine	Décoché	Décoché
+2771000000	Actions propres ou parts propres	Détail	Décoché	Décoché
+2772000000	Actions propres ou parts propres en voie d'annulation	Détail	Décoché	Décoché
+2790000000	Versements restant sur titres immobilisés non libérés	Détail	Décoché	Décoché
+28	AMORTISSEMENTS DES IMMOBILISATIONS	Racine	Décoché	Décoché
+2800000000	Amortissements des immobilisations incorporelles	Racine	Décoché	Décoché
+2801000000	Frais d'établissement	Détail	Décoché	Décoché
+2803000000	Frais de recherche et de développement	Détail	Décoché	Décoché
+2805000000	Concessions et droits similaires, brevets, licences, droits	Détail	Décoché	Décoché
+2807000000	Fonds commercial	Détail	Décoché	Décoché
+2808000000	Autres immobilisations incorporelles	Détail	Décoché	Décoché
+2810000000	Amortissements des immobilisations corporelles	Racine	Décoché	Décoché
+2811000000	Terrains de gisement	Détail	Décoché	Décoché
+2812000000	Agencements, aménagements de terrains	Détail	Décoché	Décoché
+2813000000	Constructions	Détail	Décoché	Décoché
+2814000000	Constructions sur sol d'autrui	Détail	Décoché	Décoché
+2815000000	Installations techniques, matériel et outillage industriels	Détail	Décoché	Décoché
+2818000000	Autres immobilisations corporelles	Détail	Décoché	Décoché
+2818100000	AMORT.INST.AGENC.DIV	Détail	Coché	Décoché
+2818300000	AMORT.MAT.BUREAU & I	Détail	Coché	Décoché
+2820000000	Amortissements des immobilisations mises en concession	Détail	Décoché	Décoché
+29	DEPRECIATIONS DES IMMOBILISATIONS	Racine	Décoché	Décoché
+2900000000	Dépréciations des immobilisations incorporelles	Racine	Décoché	Décoché
+2905000000	Marques, procédes, droits et valeurs similaires	Détail	Décoché	Décoché
+2906000000	Droit au bail	Détail	Décoché	Décoché
+2907000000	Fonds commercial	Détail	Décoché	Décoché
+2908000000	Autres immobilisations incorporelles	Détail	Décoché	Décoché
+2910000000	Dépréciations des immobilisations corporelles	Racine	Décoché	Décoché
+2911000000	Terrains (autres que terrains de gisement)	Détail	Décoché	Décoché
+2920000000	Dépréciations des immobilisations mises en concession	Détail	Décoché	Décoché
+2930000000	Dépréciations des immobilisations en cours	Racine	Décoché	Décoché
+2931000000	Immobilisations corporelles en cours	Détail	Décoché	Décoché
+2932000000	Immobilisations incorporelles en cours	Détail	Décoché	Décoché
+2960000000	Dépréciations des participations et créances rattachées	Racine	Décoché	Décoché
+2961000000	Titres de participation	Détail	Décoché	Décoché
+2966000000	Autres formes de participation	Détail	Décoché	Décoché
+2967000000	Créances rattachées à des participations	Détail	Décoché	Décoché
+2968000000	Créances rattachées à des sociétés en participation	Détail	Décoché	Décoché
+2970000000	Dépréciation des autres immobilisations financières	Racine	Décoché	Décoché
+2971000000	Titres immobilisés - droit de propriété	Détail	Décoché	Décoché
+2972000000	Titres immobilisés - droit de créance	Détail	Décoché	Décoché
+2973000000	Titres immobilisés de l'activité portefeuille	Détail	Décoché	Décoché
+2974000000	Prêts	Détail	Décoché	Décoché
+2975000000	Dépôts et cautionnements versés	Détail	Décoché	Décoché
+2976000000	Autres créances immobilisées	Détail	Décoché	Décoché
+3	COMPTES DE STOCKS ET D'EN-COURS	Racine	Décoché	Décoché
+31	MATIERES PREMIERES (ET FOURNITURES)	Racine	Décoché	Décoché
+3110000000	Matières (ou groupe) A	Détail	Décoché	Décoché
+3120000000	Matières (ou groupe) B	Détail	Décoché	Décoché
+3170000000	Fournitures A, B, C, ...	Détail	Décoché	Décoché
+32	AUTRES APPROVISONNEMENTS	Racine	Décoché	Décoché
+3210000000	Matières consommables	Racine	Décoché	Décoché
+3211000000	Matières (ou groupe) C	Détail	Décoché	Décoché
+3212000000	Matières (ou groupe) D	Détail	Décoché	Décoché
+3220000000	Fournitures consommables	Racine	Décoché	Décoché
+3221000000	Combustibles	Détail	Décoché	Décoché
+3222000000	Produits d'entretien	Détail	Décoché	Décoché
+3223000000	Fournitures d'atelier et d'usine	Détail	Décoché	Décoché
+3224000000	Fournitures de magasin	Détail	Décoché	Décoché
+3225000000	Fournitures de bureau	Détail	Décoché	Décoché
+3260000000	Emballages	Détail	Décoché	Décoché
+3261000000	Emballages perdus	Détail	Décoché	Décoché
+3265000000	Emballages récupérables non identifiables	Détail	Décoché	Décoché
+3267000000	Emballages à usage mixte	Détail	Décoché	Décoché
+33	EN-COURS DE PRODUCTION DE BIENS	Racine	Décoché	Décoché
+3310000000	Produits en cours	Racine	Décoché	Décoché
+3311000000	Produits en cours P1	Détail	Décoché	Décoché
+3312000000	Produits en cours P2	Détail	Décoché	Décoché
+3350000000	Travaux en cours	Racine	Décoché	Décoché
+3351000000	Travaux en cours T1	Détail	Décoché	Décoché
+3352000000	Travaux en cours T2	Détail	Décoché	Décoché
+34	EN-COURS DE PRODUCTION DE SERVICES	Racine	Décoché	Décoché
+3410000000	Etudes en cours	Racine	Décoché	Décoché
+3411000000	Etudes en cours E1	Détail	Décoché	Décoché
+3412000000	Etudes en cours E2	Détail	Décoché	Décoché
+3450000000	Prestations de services en cours	Racine	Décoché	Décoché
+3451000000	Prestations de services P1	Détail	Décoché	Décoché
+3452000000	Prestations de services P2	Détail	Décoché	Décoché
+35	STOCKS DE PRODUITS	Racine	Décoché	Décoché
+3510000000	Produits intermédiaires	Racine	Décoché	Décoché
+3511000000	Produits intermédiaires (ou groupe) A	Détail	Décoché	Décoché
+3512000000	Produits intermédiaires (ou groupe) B	Détail	Décoché	Décoché
+3550000000	Produits finis	Détail	Décoché	Décoché
+3551000000	Produits finis (ou groupe) A	Détail	Décoché	Décoché
+3552000000	Produits finis (ou groupe) B	Détail	Décoché	Décoché
+3580000000	Produits résiduels (ou matières de récupération)	Racine	Décoché	Décoché
+3581000000	Déchets	Détail	Décoché	Décoché
+3585000000	Rebuts	Détail	Décoché	Décoché
+3586000000	Matières de récupération	Détail	Décoché	Décoché
+36	Stock provenant d'immobilisations	Racine	Décoché	Décoché
+37	STOCKS DE MARCHANDISES	Racine	Décoché	Décoché
+3710000000	Marchandises (ou groupe) A	Détail	Décoché	Décoché
+3720000000	Marchandises (ou groupe) B	Détail	Décoché	Décoché
+38	STOCK EN VOIE D'ACHEMINEMENT, MIS EN DEPOT OU CONSIGNES	Racine	Décoché	Décoché
+39	DEPRECIATIONS DES STOCKS ET EN-COURS	Racine	Décoché	Décoché
+3910000000	Dépréciations des matières premières	Racine	Décoché	Décoché
+3911000000	Matières (ou groupe) A	Détail	Décoché	Décoché
+3912000000	Matières (ou groupe) B	Détail	Décoché	Décoché
+3917000000	Fournitures A, B, C, ...	Détail	Décoché	Décoché
+3920000000	Dépréciations des autres approvisionnements	Racine	Décoché	Décoché
+3921000000	Matières consommables	Détail	Décoché	Décoché
+3922000000	Fournitures consommables	Détail	Décoché	Décoché
+3926000000	Emballages	Détail	Décoché	Décoché
+3930000000	Dépréciations en-cours de production de biens	Racine	Décoché	Décoché
+3931000000	Produits en cours	Détail	Décoché	Décoché
+3935000000	Travaux en cours	Détail	Décoché	Décoché
+3940000000	Dépréciations en-cours de production de services	Racine	Décoché	Décoché
+3941000000	Etudes en cours	Détail	Décoché	Décoché
+3945000000	Prestations de services en cours	Détail	Décoché	Décoché
+3950000000	Dépréciations des stocks de produits	Racine	Décoché	Décoché
+3951000000	Produits intermédiaires	Détail	Décoché	Décoché
+3955000000	Produits finis	Détail	Décoché	Décoché
+3970000000	Dépréciations des stocks de marchandises	Racine	Décoché	Décoché
+3971000000	Marchandises (ou groupe) A	Détail	Décoché	Décoché
+3972000000	Marchandises (ou groupe) B	Détail	Décoché	Décoché
+4	COMPTES DE TIERS	Racine	Décoché	Décoché
+40	FOURNISSEURS ET COMPTES RATTACHES	Racine	Décoché	Décoché
+400	Fournisseurs et comptes rattachés	Racine	Décoché	Décoché
+401	Fournisseurs	Racine	Décoché	Décoché
+4011	Fournisseurs - Achats de biens et prestations de services	Détail	Décoché	Décoché
+4017	Fournisseurs - Retenues de garantie	Détail	Décoché	Décoché
+403	Fournisseurs - Effets à payer	Détail	Décoché	Décoché
+404	Fournisseurs d'immobilisations	Racine	Décoché	Décoché
+4041	Fournisseurs - Achats d'immobilisations	Détail	Décoché	Décoché
+4047	Fournisseurs d'immobilisations - Retenues de garantie	Détail	Décoché	Décoché
+405	Fournisseurs d'immobilisations - Effets à payer	Détail	Décoché	Décoché
+408	Fournisseurs - Factures non parvenues	Racine	Décoché	Décoché
+4081	Fournisseurs	Détail	Décoché	Décoché
+4084	Fournisseurs d'immobilisations	Détail	Décoché	Décoché
+4088	Fournisseurs - Intérêts courus	Détail	Décoché	Décoché
+409	Fournisseurs débiteurs	Racine	Décoché	Décoché
+4091	Fournisseurs - Avances et acomptes versés sur commandes	Détail	Décoché	Décoché
+4096	Fournisseurs - Créances pour emballages et matériel à rendre	Détail	Décoché	Décoché
+4097	Fournisseurs - Autres avoirs	Racine	Décoché	Décoché
+40971	Fournisseurs d'exploitation	Détail	Décoché	Décoché
+40974	Fournisseurs d'immobilisations	Détail	Décoché	Décoché
+4098	Rabais, remises, ristournes à obtenir et autres avoirs	Détail	Décoché	Décoché
+41	CLIENTS ET COMPTES RATTACHES	Racine	Décoché	Décoché
+410	Clients et comptes rattachés	Racine	Décoché	Décoché
+411	Clients	Racine	Décoché	Décoché
+4111	Clients - Ventes de biens ou de prestations de services	Détail	Décoché	Décoché
+4117	Clients - Retenues de garantie	Détail	Décoché	Décoché
+413	Clients - Effets à recevoir	Détail	Décoché	Décoché
+416	Clients douteux ou litigieux	Détail	Décoché	Décoché
+418	Clients - Produits non encore facturés	Racine	Décoché	Décoché
+4181	Clients - Factures à établir	Détail	Décoché	Décoché
+4188	Clients - Intérêts courus	Détail	Décoché	Décoché
+419	Clients créditeurs	Racine	Décoché	Décoché
+4191	Clients - Avances et acomptes reçus sur commandes	Détail	Décoché	Décoché
+4196	Clients - Dettes pour emballages et matériels consignés	Détail	Décoché	Décoché
+4197	Clients - Autres avoirs	Détail	Décoché	Décoché
+4198	Rabais, remises, ristournes à accorder et autres avoirs	Détail	Décoché	Décoché
+42	PERSONNEL ET COMPTES RATTACHES	Racine	Décoché	Décoché
+4210000000	Personnel - Rémunérations dues	Détail	Décoché	Décoché
+4220000000	Comités d'entreprises, d'établissement...	Détail	Décoché	Décoché
+4240000000	Participation des salariés aux résultats	Racine	Décoché	Décoché
+4246000000	Réserve spéciale (art. L442-2 du Code du Travail)	Détail	Décoché	Décoché
+4248000000	Comptes courants	Détail	Décoché	Décoché
+4250000000	Personnel - Avances et acomptes	Détail	Décoché	Décoché
+4260000000	Personnel - Dépôts	Détail	Décoché	Décoché
+4270000000	Personnel - Oppositions	Détail	Décoché	Décoché
+4280000000	Personnel - Charges à payer et produits à recevoir	Racine	Décoché	Décoché
+4282000000	Dettes provisionnées pour congés à payer	Détail	Décoché	Décoché
+4284000000	Dettes provisionnées pour participation des salariés	Détail	Décoché	Décoché
+4286000000	Autres charges à payer	Détail	Décoché	Décoché
+4287000000	Produits à recevoir	Détail	Décoché	Décoché
+43	SECURITE SOCIALE ET AUTRES ORGANISMES SOCIAUX	Racine	Décoché	Décoché
+4310000000	Sécurité sociale	Détail	Décoché	Décoché
+4370000000	Autres organismes sociaux	Racine	Décoché	Décoché
+4372000000	Mutuelle	Détail	Décoché	Décoché
+4373000000	Caisses Retraites	Détail	Décoché	Décoché
+4374000000	Assedic	Détail	Décoché	Décoché
+4380000000	Organismes sociaux - Charges à payer et produits à recevoir	Racine	Décoché	Décoché
+4382000000	Charges sociales sur congés à payer	Détail	Décoché	Décoché
+4386000000	Autres charges à payer	Détail	Décoché	Décoché
+4387000000	Produits à recevoir	Détail	Décoché	Décoché
+44	ETAT ET AUTRES COLLECTIVITES PUBLIQUES	Racine	Décoché	Décoché
+4410000000	Etat - Subventions à recevoir	Racine	Décoché	Décoché
+4411000000	Subventions d'investissement	Détail	Coché	Décoché
+4417000000	Subventions d'exploitation	Détail	Coché	Décoché
+4418000000	Subventions d'équilibre	Détail	Coché	Décoché
+4419000000	Avances sur subventions	Détail	Coché	Décoché
+4420000000	Etat - Impôts et taxes recouvrables sur des tiers	Racine	Décoché	Décoché
+4424000000	Obligataires	Détail	Décoché	Décoché
+4425000000	Associés	Détail	Décoché	Décoché
+4430000000	Opérations particulières avec l'Etat, les collectivités	Racine	Décoché	Décoché
+4431000000	Créances sur l'Etat suppression décalage un mois sur TVA	Détail	Décoché	Décoché
+4438000000	Intérêts courus sur créances figurant au compte 4431	Détail	Décoché	Décoché
+4440000000	Etat - Impôts sur les bénéfices	Détail	Décoché	Décoché
+4450000000	Etat - Taxes sur le chiffre d'affaires	Racine	Décoché	Décoché
+4452100000	TVA due intracommunautaire (biens) 20%	Détail	Décoché	Décoché
+4452200000	TVA due intracommunautaire (services) 20%	Détail	Décoché	Décoché
+4452300000	TVA due assujetti hors France 20%	Détail	Décoché	Décoché
+4452400000	TVA due gaz imposable 20%	Détail	Décoché	Décoché
+4452500000	TVA due autres opérations imposables 20%	Détail	Décoché	Décoché
+4455000000	Taxes sur le chiffre d'affaires à décaisser	Racine	Décoché	Décoché
+4455100000	TVA à décaisser	Racine	Décoché	Décoché
+4455110000	TVA à décaisser en France	Détail	Décoché	Décoché
+4455800000	Taxes assimilées à la TVA	Détail	Décoché	Décoché
+4456000000	Taxes sur le chiffre d'affaires déductibles	Racine	Décoché	Décoché
+4456200000	TVA sur immobilisations	Racine	Décoché	Décoché
+4456210000	TVA sur immobilisations 20% Débits	Détail	Décoché	Décoché
+4456211000	TVA sur immobilisations 5,5% Débits	Détail	Décoché	Décoché
+4456212000	TVA sur immobilisations 2,1% Débits	Détail	Décoché	Décoché
+4456213000	TVA sur immobilisations 10% Débits	Détail	Décoché	Décoché
+4456214000	TVA sur immobilisations 20% Encaissements	Détail	Décoché	Décoché
+4456215000	TVA sur immobilisations 5,5% Encaissements	Détail	Décoché	Décoché
+4456216000	TVA sur immobilisations 2,1% Encaissements	Détail	Décoché	Décoché
+4456217000	TVA sur immobilisations 10% Encaissements	Détail	Décoché	Décoché
+4456220000	TVA sur immobilisations DOM 8,5% Débits	Détail	Décoché	Décoché
+4456221000	TVA sur immobilisations DOM 2,1% Débits	Détail	Décoché	Décoché
+4456222000	TVA sur immobilisations DOM 8,5% Encaissements	Détail	Décoché	Décoché
+4456223000	TVA sur immobilisations DOM 2,1% Encaissements	Détail	Décoché	Décoché
+4456230000	TVA sur immobilisations Corse 20% Débits	Détail	Décoché	Décoché
+4456231000	TVA sur immobilisations Corse 20% Encaissements	Détail	Décoché	Décoché
+4456300000	TVA transférée par d'autres entreprises	Détail	Décoché	Décoché
+4456600000	TVA sur autres biens et services	Racine	Décoché	Décoché
+4456610000	TVA déductible 20% Débits	Détail	Décoché	Décoché
+4456611000	TVA déductible 5,5% Débits	Détail	Décoché	Décoché
+4456612000	TVA déductible 2,1% Débits	Détail	Décoché	Décoché
+4456613000	TVA déductible 10% Débits	Détail	Décoché	Décoché
+4456614000	TVA déductible 20% Encaissements	Détail	Décoché	Décoché
+4456615000	TVA déductible 5,5% Encaissements	Détail	Décoché	Décoché
+4456616000	TVA déductible 2,1% Encaissements	Détail	Décoché	Décoché
+4456617000	TVA déductible 10% Encaissements	Détail	Décoché	Décoché
+4456620000	TVA déductible DOM 8,5% Débits	Détail	Décoché	Décoché
+4456621000	TVA déductible DOM 2,1% Débits	Détail	Décoché	Décoché
+4456622000	TVA déductible DOM 8,5% Encaissements	Détail	Décoché	Décoché
+4456623000	TVA déductible DOM 2,1% Encaissements	Détail	Décoché	Décoché
+4456630000	TVA déductible Corse 20% Débits	Détail	Décoché	Décoché
+4456631000	TVA déductible Corse 10% Débits	Détail	Décoché	Décoché
+4456632000	TVA déductible Corse 20% Encaissements	Détail	Décoché	Décoché
+4456633000	TVA déductible Corse 10% Encaissements	Détail	Décoché	Décoché
+4456700000	Crédit de TVA à reporter	Détail	Décoché	Décoché
+4456800000	Taxes assimilées à la TVA	Détail	Décoché	Décoché
+4457000000	Taxes sur le chiffre d'affaires collectées par l'entreprise	Racine	Décoché	Décoché
+4457100000	TVA collectée	Racine	Décoché	Décoché
+4457110000	TVA collectée 20% Débits	Détail	Décoché	Décoché
+4457111000	TVA collectée 5,5% Débits	Détail	Décoché	Décoché
+4457112000	TVA collectée 2,1% Débits	Détail	Décoché	Décoché
+4457113000	TVA collectée 10% Débits	Détail	Décoché	Décoché
+4457114000	TVA collectée 20% Encaissements	Détail	Décoché	Décoché
+4457115000	TVA collectée 5,5% Encaissements	Détail	Décoché	Décoché
+4457116000	TVA collectée 2,1% Encaissements	Détail	Décoché	Décoché
+4457117000	TVA collectée 10% Encaissements	Détail	Décoché	Décoché
+4457120000	TVA collectée DOM 8,5% Débits	Détail	Décoché	Décoché
+4457121000	TVA collectée DOM 2,1% Débits	Détail	Décoché	Décoché
+4457122000	TVA collectée DOM 8,5% Encaissements	Détail	Décoché	Décoché
+4457123000	TVA collectée DOM 2,1% Encaissements	Détail	Décoché	Décoché
+4457130000	TVA collectée Corse 20% Débits	Détail	Décoché	Décoché
+4457131000	TVA collectée Corse 10% Débits	Détail	Décoché	Décoché
+4457132000	TVA collectée Corse 20% Encaissements	Détail	Décoché	Décoché
+4457133000	TVA collectée Corse 10% Encaissements	Détail	Décoché	Décoché
+4457140000	TVA collectée Monaco 20% Débits	Détail	Décoché	Décoché
+4457141000	TVA collectée Monaco 5,5% Débits	Détail	Décoché	Décoché
+4457142000	TVA collectée Monaco 2,1% Débits	Détail	Décoché	Décoché
+4457143000	TVA collectée Monaco 10% Débits	Détail	Décoché	Décoché
+4457144000	TVA collectée Monaco 20% Encaissements	Détail	Décoché	Décoché
+4457145000	TVA collectée Monaco 5,5% Encaissements	Détail	Décoché	Décoché
+4457146000	TVA collectée Monaco 2,1% Encaissements	Détail	Décoché	Décoché
+4457147000	TVA collectée Monaco 10% Encaissements	Détail	Décoché	Décoché
+4457800000	Taxes assimilées à la TVA	Détail	Décoché	Décoché
+4458000000	Taxes sur le chiffre d'affaires à régulariser ou en attente	Racine	Décoché	Décoché
+4458100000	Acomptes - Régime simplifié d'imposition	Détail	Décoché	Décoché
+4458200000	Acomptes - Régime du forfait	Détail	Décoché	Décoché
+4458300000	Remboursement de taxes sur le chiffre d'affaires demandé	Détail	Décoché	Décoché
+4458400000	TVA récupérée d'avance	Détail	Décoché	Décoché
+4458600000	Taxes sur le chiffre d'affaires sur factures non parvenues	Détail	Décoché	Décoché
+4458700000	Taxes sur le chiffre d'affaires sur factures à établir	Détail	Décoché	Décoché
+4460000000	Obligations cautionnées	Détail	Décoché	Décoché
+4470000000	ETAT AUTR.IMPOTS TAX	Détail	Décoché	Décoché
+4480000000	Etat - Charges à payer et produits à recevoir	Racine	Décoché	Décoché
+4482000000	Charges fiscales sur congés à payer	Détail	Décoché	Décoché
+4486000000	Autres charges à payer	Détail	Décoché	Décoché
+4487000000	Produits à recevoir	Détail	Décoché	Décoché
+4490000000	Quotas d'émission à restituer à l'Etat	Détail	Décoché	Décoché
+45	GROUPE ET ASSOCIES	Racine	Décoché	Décoché
+4510000000	Groupe	Détail	Décoché	Décoché
+4550000000	Associés - Comptes courants	Racine	Décoché	Décoché
+4551000000	Principal	Détail	Décoché	Décoché
+4558000000	Intérêts courus	Détail	Décoché	Décoché
+4560000000	Associés - Opérations sur le capital	Racine	Décoché	Décoché
+4561000000	Associés - Comptes d'apport en société	Racine	Décoché	Décoché
+4561100000	Apports en nature	Détail	Décoché	Décoché
+4561500000	Apports en numéraire	Détail	Décoché	Décoché
+4562000000	Apporteurs - Capital appelé, non versé	Racine	Décoché	Décoché
+4562100000	Actionnaires - Capital souscrit et appelé, non versé	Détail	Décoché	Décoché
+4562500000	Associés - Capital appelé, non versé	Détail	Décoché	Décoché
+4563000000	Associés - Versements reçus sur augmentation de capital	Détail	Décoché	Décoché
+4564000000	Associés - Versements anticipés	Détail	Décoché	Décoché
+4566000000	Actionnaires défaillants	Détail	Décoché	Décoché
+4567000000	Associés - Capital à rembourser	Détail	Décoché	Décoché
+4570000000	Associés - Dividendes à payer	Détail	Décoché	Décoché
+4580000000	Associés - Opérations faites en commun et en G.I.E.	Racine	Décoché	Décoché
+4581000000	Opérations courantes	Détail	Décoché	Décoché
+4588000000	Intérêts courus	Détail	Décoché	Décoché
+46	DEBITEURS DIVERS ET CREDITEURS DIVERS	Racine	Décoché	Décoché
+4620000000	Créances sur cessions d'immobilisations	Détail	Décoché	Décoché
+4640000000	Dettes sur acquisitions de valeurs mobilières de placement	Détail	Décoché	Décoché
+4650000000	Créances sur cessions de valeurs mobilières de placement	Détail	Décoché	Décoché
+4670000000	Autres comptes débiteurs ou créditeurs	Détail	Décoché	Décoché
+4680000000	Divers - Charges à payer et produits à recevoir	Racine	Décoché	Décoché
+4686000000	Charges à payer	Détail	Décoché	Décoché
+4687000000	Produits à recevoir	Détail	Décoché	Décoché
+47	COMPTES TRANSITOIRES OU  D'ATTENTE	Racine	Décoché	Décoché
+4710000000	Compte d'attente	Détail	Coché	Coché
+4760000000	Différences de conversion - ACTIF	Racine	Décoché	Décoché
+4761000000	Diminution des créances	Détail	Décoché	Décoché
+4762000000	Augmentation des dettes	Détail	Décoché	Décoché
+4768000000	Différences compensées par couverture de change	Détail	Décoché	Décoché
+4770000000	Différences de conversion - PASSIF	Racine	Décoché	Décoché
+4771000000	Augmentation des créances	Détail	Décoché	Décoché
+4772000000	Diminution des dettes	Détail	Décoché	Décoché
+4778000000	Différences compensées par couverture de change	Détail	Décoché	Décoché
+4780000000	Autres comptes transitoires	Détail	Décoché	Décoché
+48	COMPTES DE REGULARISATION	Racine	Décoché	Décoché
+4810000000	Charges à répartir sur plusieurs exercices	Racine	Décoché	Décoché
+4816000000	Frais d’émission des emprunts	Détail	Décoché	Décoché
+4860000000	Charges constatées d'avance	Détail	Décoché	Décoché
+4870000000	Produits constatés d'avance	Détail	Décoché	Décoché
+4880000000	Comptes de répartition périodique des charges et produits	Racine	Décoché	Décoché
+4886000000	Charges	Détail	Décoché	Décoché
+4887000000	Produits	Détail	Décoché	Décoché
+4890000000	Quotas d'émission alloués par l'Etat	Détail	Décoché	Décoché
+49	DEPRECIATIONS DES COMPTES DE TIERS	Racine	Décoché	Décoché
+4910000000	Dépréciations comptes de clients	Détail	Décoché	Décoché
+4950000000	Dépréciations comptes du groupe et associés	Racine	Décoché	Décoché
+4951000000	Comptes du groupe	Détail	Décoché	Décoché
+4955000000	Comptes courants des associés	Détail	Décoché	Décoché
+4958000000	Opérations faites en commun et en G.I.E.	Détail	Décoché	Décoché
+4960000000	Dépréciations des comptes de débiteurs divers	Racine	Décoché	Décoché
+4962000000	Créances sur cessions d'immobilisations	Détail	Décoché	Décoché
+4965000000	Créances sur cessions de valeurs mobilières de placement	Détail	Décoché	Décoché
+4967000000	Autres comptes débiteurs	Détail	Décoché	Décoché
+5	COMPTES FINANCIERS	Racine	Décoché	Décoché
+50	VALEURS MOBILIERES DE PLACEMENT	Racine	Décoché	Décoché
+5010000000	Parts dans des entreprises liées	Détail	Décoché	Décoché
+5020000000	Actions propres	Détail	Décoché	Décoché
+5030000000	Actions	Racine	Décoché	Décoché
+5031000000	Titres cotés	Détail	Décoché	Décoché
+5035000000	Titres non cotés	Détail	Décoché	Décoché
+5040000000	Autres titres conférant un droit de propriété	Détail	Décoché	Décoché
+5050000000	Obligations et bons émis par la société et rachetés par elle	Détail	Décoché	Décoché
+5060000000	Obligations	Racine	Décoché	Décoché
+5061000000	Titres cotés	Détail	Décoché	Décoché
+5065000000	Titres non cotés	Détail	Décoché	Décoché
+5070000000	Bons du Trésor et bons de caisse à court terme	Détail	Décoché	Décoché
+5080000000	Autres valeurs mobilières de placement + créances assimilées	Racine	Décoché	Décoché
+5081000000	Autres valeurs mobilières	Détail	Décoché	Décoché
+5082000000	Bons de souscription	Détail	Décoché	Décoché
+5088000000	Intérêts courus sur obligations, bons et valeurs assimilées	Détail	Décoché	Décoché
+5090000000	Versements restant sur valeurs mobilières de placement	Racine	Décoché	Décoché
+5094000000	Autres titres conférant un droit de propriété	Détail	Décoché	Décoché
+51	BANQUES, ETABLISSEMENTS FINANCIERS ET ASSIMILES	Racine	Décoché	Décoché
+5110000000	Valeurs à l'encaissement	Racine	Décoché	Décoché
+5111000000	Coupons échus à l'encaissement	Détail	Décoché	Décoché
+5112000000	Chèques à encaisser	Détail	Décoché	Décoché
+5113000000	Effets à l'encaissement	Détail	Décoché	Décoché
+5114000000	Effets à l'escompte	Détail	Décoché	Décoché
+5115000000	CB à encaisser	Détail	Décoché	Décoché
+5116000000	Espèces à encaisser	Détail	Décoché	Décoché
+5117000000	Autres moyens de paiement à encaisser	Détail	Décoché	Décoché
+5118000000	Divers à encaisser	Détail	Décoché	Décoché
+5120000000	Banques	Racine	Décoché	Décoché
+5121000000	Comptes en monnaie nationale	Détail	Décoché	Décoché
+5124000000	Comptes en devises	Détail	Décoché	Décoché
+5140000000	Chèques postaux	Détail	Décoché	Décoché
+5150000000	Caisses du Trésor et des établissements publics	Détail	Décoché	Décoché
+5160000000	Sociétés de bourse	Détail	Décoché	Décoché
+5170000000	Autres organismes financiers	Détail	Décoché	Décoché
+5180000000	Intérêts courus	Racine	Décoché	Décoché
+5181000000	Intérêts courus à payer	Détail	Décoché	Décoché
+5188000000	Intérêts courus à recevoir	Détail	Décoché	Décoché
+5190000000	Concours bancaires courants	Racine	Décoché	Décoché
+5191000000	Crédit de mobilisation de créances commerciales (CMCC)	Détail	Décoché	Décoché
+5193000000	Mobilisation de créances nées à l’étranger	Détail	Décoché	Décoché
+5198000000	Intérêts courus sur concours bancaires courants	Détail	Décoché	Décoché
+52	INSTRUMENTS DE TRESORERIE	Racine	Décoché	Décoché
+53	CAISSE	Racine	Décoché	Décoché
+5310000000	Caisse siège social	Détail	Décoché	Décoché
+5314000000	Caisse en devises	Détail	Décoché	Décoché
+5320000000	Caisse succursale (ou usine) A	Détail	Décoché	Décoché
+5330000000	Caisse succursale (ou usine) B	Détail	Décoché	Décoché
+54	REGIES D'AVANCES ET ACCREDITIFS	Racine	Décoché	Décoché
+58	VIREMENTS INTERNES	Racine	Décoché	Décoché
+5800000000	Virements internes	Détail	Décoché	Décoché
+59	DEPRECIATIONS DES COMPTES FINANCIERS	Racine	Décoché	Décoché
+5900000000	Dépréciations valeurs mobilières de placement	Racine	Décoché	Décoché
+5903000000	Actions	Détail	Décoché	Décoché
+5904000000	Autres titres conférant un droit de propriété	Détail	Décoché	Décoché
+5906000000	Obligations	Détail	Décoché	Décoché
+5908000000	Autres valeurs mobilières et créances assimilées	Détail	Décoché	Décoché
+6	COMPTES DE CHARGES	Racine	Décoché	Décoché
+60	ACHATS (sauf 603)	Racine	Décoché	Décoché
+6010000000	Achats stockés - Matières premières (et fournitures)	Racine	Décoché	Décoché
+6011000000	Matières (ou groupe) A	Détail	Coché	Décoché
+6012000000	Matières (ou groupe) B	Détail	Coché	Décoché
+6017000000	Fournitures A, B, C,...	Détail	Décoché	Décoché
+6020000000	Achats stockés - Autres approvisionnements	Racine	Décoché	Décoché
+6021000000	Matières consommables	Racine	Décoché	Décoché
+6021100000	Matières (ou groupe) C	Détail	Décoché	Décoché
+6021200000	Matières (ou groupe) D	Détail	Décoché	Décoché
+6022000000	Fournitures consommables	Racine	Décoché	Décoché
+6022100000	Combustibles	Détail	Décoché	Décoché
+6022200000	Produits d'entretien	Détail	Décoché	Décoché
+6022300000	Fournitures d'atelier et d'usine	Détail	Décoché	Décoché
+6022400000	Fournitures de magasin	Détail	Décoché	Décoché
+6022500000	Fournitures de bureau	Détail	Décoché	Décoché
+6026000000	Emballages	Racine	Décoché	Décoché
+6026100000	Emballages perdus	Détail	Décoché	Décoché
+6026500000	Emballages récupérables non identifiables	Détail	Décoché	Décoché
+6026700000	Emballages à usage mixte	Détail	Décoché	Décoché
+6030000000	VARIATION DES STOCKS (approvisionnements et marchandises)	Racine	Décoché	Décoché
+6031000000	Variation des stocks de matières premières (et fournitures)	Détail	Décoché	Décoché
+6032000000	Variation des stocks des autres approvisionnements	Détail	Décoché	Décoché
+6037000000	Variation des stocks de marchandises	Détail	Décoché	Décoché
+6040000000	Achats d'études et prestation	Détail	Coché	Décoché
+6050000000	Achats de matériel, équipements et travaux	Détail	Décoché	Décoché
+6060000000	Achats non stockés de matières et fournitures	Racine	Décoché	Décoché
+6061000000	Fournitures non stockables (eau, énergie, ...)	Racine	Décoché	Décoché
+6061100000	FOURNITURES ELECTRIC	Détail	Coché	Décoché
+6061200000	FOURNITURES EAU	Détail	Coché	Décoché
+6061400000	Compte créé durant l'import	Détail	Coché	Décoché
+6062000000	FORFAIT KILOMETRIQUE	Détail	Coché	Décoché
+6063000000	FOURN.ENTRET.&PETIT	Détail	Coché	Décoché
+6064000000	FOURNIT.ADMINISTRATI	Détail	Coché	Décoché
+6068000000	libellé 60680000000 à créér	Détail	Décoché	Décoché
+6070000000	Achats de marchandises	Racine	Décoché	Décoché
+6071000000	Marchandise (ou groupe) A	Détail	Coché	Décoché
+6072000000	Marchandise (ou groupe) B	Détail	Coché	Décoché
+6080000000	Frais accessoires incorporés aux achats	Détail	Coché	Décoché
+6088000000	Eco-contribution sur les achats (DEEE)	Détail	Coché	Décoché
+6090000000	Rabais, remises et ristournes obtenus sur achats	Racine	Décoché	Décoché
+6091000000	RRR obtenus sur achats de matières premières et fournitures	Détail	Coché	Décoché
+6092000000	RRR obtenus sur achats d'autres approvisionnements stockés	Détail	Décoché	Décoché
+6094000000	RRR obtenus sur achats d’études et prestations de services	Détail	Coché	Décoché
+6095000000	RRR obtenus sur achats de matériel, équipements et travaux	Détail	Décoché	Décoché
+6096000000	RRR obtenus sur achats d'approvisionnements non stockés	Détail	Coché	Décoché
+6097000000	RRR obtenus sur achats de marchandises	Détail	Coché	Décoché
+6098000000	Rabais, remises, ristournes non affectés	Détail	Décoché	Décoché
+61	SERVICES EXTERIEURS	Racine	Décoché	Décoché
+6110000000	Sous-traitance générale	Détail	Décoché	Décoché
+6120000000	Redevances de crédit-bail	Racine	Décoché	Décoché
+6122000000	Crédit-bail mobilier	Détail	Décoché	Décoché
+6125000000	Crédit-bail immobilier	Détail	Coché	Décoché
+6130000000	Locations	Racine	Décoché	Décoché
+6132000000	LOYER & CHARGES LOCA	Détail	Coché	Décoché
+6135000000	LOCATION MATERIEL	Détail	Décoché	Décoché
+6136000000	Malis sur emballages	Détail	Décoché	Décoché
+6140000000	Charges locatives et de copropriété	Détail	Coché	Décoché
+6150000000	Entretien et réparations	Racine	Décoché	Décoché
+6152000000	ENTRETIEN IMMOB.	Détail	Coché	Décoché
+6155000000	sur biens mobiliers	Détail	Décoché	Décoché
+6156000000	Maintenance	Détail	Décoché	Décoché
+6160000000	PRIMES D'ASSURANCE	Détail	Coché	Décoché
+6161000000	Multirisques	Détail	Coché	Décoché
+6162000000	Assurance obligatoire dommage construction	Détail	Décoché	Décoché
+6163000000	Assurance - Transport	Racine	Décoché	Décoché
+6163600000	Assurance - Transport sur achats	Détail	Décoché	Décoché
+6163700000	Assurance - Transport sur ventes	Détail	Décoché	Décoché
+6163800000	Assurance - Transport sur autres biens	Détail	Décoché	Décoché
+6164000000	Risques d'exploitation	Détail	Décoché	Décoché
+6165000000	Insolvabilité clients	Détail	Décoché	Décoché
+6170000000	Etudes et recherches	Détail	Décoché	Décoché
+6180000000	Divers	Racine	Décoché	Décoché
+6181000000	Documentation générale	Détail	Décoché	Décoché
+6183000000	Documentation technique	Détail	Décoché	Décoché
+6185000000	Frais de colloques, séminaires, conférences	Détail	Décoché	Décoché
+6190000000	Rabais remises et ristournes obtenus sur services extérieurs	Détail	Décoché	Décoché
+62	AUTRES SERVICES EXTERIEURS	Racine	Décoché	Décoché
+6210000000	Personnel extérieur à l'entreprise	Racine	Décoché	Décoché
+6211000000	Personnel intérimaire	Détail	Décoché	Décoché
+6214000000	Personnel détaché ou prêté à l'entreprise	Détail	Décoché	Décoché
+6220000000	Rémunérations intermédiaires et honoraires	Racine	Décoché	Décoché
+6221000000	Commissions et courtages sur achats	Détail	Décoché	Décoché
+6222000000	Commissions et courtages sur ventes	Détail	Décoché	Décoché
+6224000000	Rémunérations des transitaires	Détail	Décoché	Décoché
+6225000000	Rémunérations d'affacturage	Détail	Décoché	Décoché
+6226000000	HONORAIRES	Détail	Coché	Décoché
+6227000000	Frais d'actes et de contentieux	Détail	Décoché	Décoché
+6228000000	Divers	Détail	Décoché	Décoché
+6230000000	Publicité, publications, relations publiques	Détail	Coché	Décoché
+6231000000	Annonces et insertions	Détail	Décoché	Décoché
+6232000000	Echantillons	Détail	Décoché	Décoché
+6233000000	Foires et expositions	Détail	Décoché	Décoché
+6234000000	Cadeaux à la clientèle	Détail	Décoché	Décoché
+6235000000	Primes	Détail	Décoché	Décoché
+6236000000	Catalogues et imprimés	Détail	Décoché	Décoché
+6237000000	Publications	Détail	Coché	Décoché
+6238000000	POURBOIRES DONS	Détail	Décoché	Décoché
+6240000000	Transports de biens et transports collectifs du personnel	Racine	Décoché	Décoché
+6241000000	Transports sur achats	Détail	Coché	Décoché
+6242000000	Transports sur ventes	Détail	Décoché	Décoché
+6243000000	Transports entre établissements ou chantiers	Détail	Décoché	Décoché
+6244000000	Transports administratifs	Détail	Décoché	Décoché
+6247000000	Transports collectifs du personnel	Détail	Décoché	Décoché
+6248000000	Divers	Détail	Décoché	Décoché
+6250000000	Déplacements, missions et réceptions	Racine	Décoché	Décoché
+6251000000	VOYAGES ET DEPLACEME	Détail	Coché	Décoché
+6255000000	Frais de déménagement	Détail	Décoché	Décoché
+6256000000	Missions	Détail	Décoché	Décoché
+6257000000	Réceptions	Détail	Décoché	Décoché
+6260000000	FRAIS POSTAUX & TELE	Détail	Coché	Décoché
+6261000000	Compte n°62610000	Détail	Coché	Décoché
+6262000000	Télécommunication	Détail	Coché	Décoché
+6270000000	Services bancaires et assimilé	Détail	Coché	Décoché
+6271000000	Frais sur titres (achat, vente, garde)	Détail	Décoché	Décoché
+6272000000	Commissions et frais sur émission d'emprunts	Détail	Décoché	Décoché
+6275000000	Frais sur effets	Détail	Décoché	Décoché
+6276000000	Location de coffres	Détail	Décoché	Décoché
+6278000000	Autres frais et commissions sur prestations de services	Détail	Décoché	Décoché
+6280000000	Divers	Détail	Coché	Décoché
+6281000000	COTISATIONS	Détail	Décoché	Décoché
+6284000000	Frais de recrutement de personnel	Détail	Décoché	Décoché
+6290000000	Rabais, remises et ristournes obtenus sur services extérieur	Détail	Décoché	Décoché
+63	IMPOTS, TAXES ET VERSEMENTS ASSIMILES	Racine	Décoché	Décoché
+6310000000	Impôts, taxes et versements sur rémunérations (admin.)	Racine	Décoché	Décoché
+6311000000	Taxe sur les salaires	Détail	Décoché	Décoché
+6312000000	Taxe d'apprentissage	Détail	Décoché	Décoché
+6313000000	Participation des employeurs à la formation professionnelle	Détail	Décoché	Décoché
+6314000000	Cotisation pour défaut d'investissement obligatoire	Détail	Décoché	Décoché
+6318000000	Autres	Détail	Décoché	Décoché
+6330000000	Impôts, taxes et versements sur rémunérations (autres org.)	Racine	Décoché	Décoché
+6331000000	Versement de transport	Détail	Décoché	Décoché
+6332000000	Allocations logement	Détail	Décoché	Décoché
+6333000000	Participation des employeurs à la formation professionnelle	Détail	Décoché	Décoché
+6334000000	Participation des employeurs à l'effort de construction	Détail	Décoché	Décoché
+6335000000	Versements libératoires (exonération taxe apprentissage)	Détail	Décoché	Décoché
+6338000000	Autres	Détail	Décoché	Décoché
+6350000000	Autres impôts, taxes et versements assimilés (admin.)	Racine	Décoché	Décoché
+6351000000	libellé 63510000000 à créér	Détail	Coché	Décoché
+6351100000	TAXE PROFESSIONNELLE	Détail	Décoché	Décoché
+6351200000	TAXES FONCIERES	Détail	Décoché	Décoché
+6351300000	Autres impôts locaux	Détail	Décoché	Décoché
+6351400000	Taxe sur les véhicules des sociétés	Détail	Décoché	Décoché
+6352000000	Taxes sur le chiffre d'affaires non récupérables	Détail	Décoché	Décoché
+6353000000	Impôts indirects	Détail	Décoché	Décoché
+6354000000	Droits d'enregistrement et de timbre	Détail	Décoché	Décoché
+6354100000	Droits de mutation	Détail	Décoché	Décoché
+6358000000	Autres droits	Détail	Décoché	Décoché
+6370000000	Autres impôts, taxes et versements (autres organismes)	Racine	Décoché	Décoché
+6371000000	Contribution sociale de solidarité à la charge des sociétés	Détail	Décoché	Décoché
+6372000000	Taxes perçues par les organismes publics internationaux	Détail	Décoché	Décoché
+6374000000	Impôts et taxes exigibles à l'étranger	Détail	Décoché	Décoché
+6378000000	Taxes diverses	Détail	Décoché	Décoché
+64	CHARGES DE PERSONNEL	Racine	Décoché	Décoché
+6410000000	Rémunérations du personnel	Racine	Décoché	Décoché
+6411000000	Salaires, appointements	Détail	Décoché	Décoché
+6412000000	Congés payés	Détail	Décoché	Décoché
+6413000000	Primes et gratifications	Détail	Décoché	Décoché
+6414000000	Indemnités et avantages divers	Détail	Décoché	Décoché
+6415000000	Supplément familial	Détail	Décoché	Décoché
+6440000000	Rémunération du travail de l'exploitant	Détail	Décoché	Décoché
+6450000000	Charges de sécurité sociale et de prévoyance	Racine	Décoché	Décoché
+6451000000	Cotisations à l'URSSAF	Détail	Décoché	Décoché
+6452000000	Cotisations aux mutuelles	Détail	Décoché	Décoché
+6453000000	Cotisations aux caisses de retraites	Détail	Décoché	Décoché
+6454000000	Cotisations aux ASSEDIC	Détail	Décoché	Décoché
+6458000000	Cotisations aux autres organismes sociaux	Détail	Décoché	Décoché
+6460000000	COTIS.SOC.PERS.EXPLO	Détail	Décoché	Décoché
+6463000000	libellé 64630000000 à créér	Détail	Coché	Décoché
+6470000000	Autres charges sociales	Racine	Décoché	Décoché
+6471000000	Prestations directes	Détail	Décoché	Décoché
+6472000000	Versements aux comités d'entreprise et d'établissement	Détail	Décoché	Décoché
+6473000000	Versements aux comités d’hygiène et de sécurité	Détail	Décoché	Décoché
+6474000000	Versements aux autres oeuvres sociales	Détail	Décoché	Décoché
+6475000000	Médecine du travail, pharmacie	Détail	Décoché	Décoché
+6480000000	Autres charges de personnel	Détail	Décoché	Décoché
+6481000000	Carte orange	Détail	Décoché	Décoché
+65	AUTRES CHARGES DE GESTION COURANTE	Racine	Décoché	Décoché
+6510000000	REDEVANCES	Détail	Coché	Décoché
+6511000000	Redevances pour concessions, brevets, licences, marques	Détail	Décoché	Décoché
+6516000000	Droits d'auteur et de reproduction	Détail	Décoché	Décoché
+6518000000	Autres droits et valeurs similaires	Détail	Décoché	Décoché
+6530000000	Jetons de présence	Détail	Décoché	Décoché
+6540000000	Pertes sur créances irrécouvrables	Détail	Coché	Décoché
+6541000000	Créances de l'exercice	Détail	Décoché	Décoché
+6544000000	Créances des exercices antérieurs	Détail	Décoché	Décoché
+6550000000	Quote-part de résultat sur opérations faites en commun	Racine	Décoché	Décoché
+6551000000	Quote-part de bénéfice transférée (comptabilité du gérant)	Détail	Décoché	Décoché
+6555000000	Quote-part de perte supportée (comptabilité des associés)	Détail	Décoché	Décoché
+6580000000	Charges diverses de gestion courante	Détail	Décoché	Décoché
+66	CHARGES FINANCIERES	Racine	Décoché	Décoché
+6610000000	INTERETS	Détail	Coché	Décoché
+6611000000	Intérêts des emprunts et dettes	Détail	Coché	Décoché
+6611600000	Intérêts des emprunts et dettes assimilés	Détail	Décoché	Décoché
+6611700000	Intérêts des dettes rattachés à des participations	Détail	Décoché	Décoché
+6615000000	Intérêts des comptes courants et des dépôts créditeurs	Détail	Décoché	Décoché
+6616000000	Intérêts bancaires et sur opérations de financement	Détail	Décoché	Décoché
+6617000000	Intérêts des obligations cautionnées	Détail	Décoché	Décoché
+6618000000	Intérêts des autres dettes	Racine	Décoché	Décoché
+6618100000	Intérêts des dettes commerciales	Détail	Décoché	Décoché
+6618800000	Intérêts des dettes diverses	Détail	Décoché	Décoché
+6640000000	Pertes sur créances liées à des participations	Détail	Décoché	Décoché
+6650000000	Escomptes accordés	Détail	Décoché	Coché
+6660000000	Pertes de change	Détail	Décoché	Décoché
+6670000000	Charges nettes sur cessions valeurs mobilières de placement	Détail	Décoché	Décoché
+6680000000	Autres charges financières	Détail	Décoché	Décoché
+6688000000	Ecart de conversion (perte)	Détail	Décoché	Décoché
+67	CHARGES EXCEPTIONNELLES	Racine	Décoché	Décoché
+6710000000	Charges exceptionnelles sur opérations de gestion	Racine	Décoché	Décoché
+6711000000	Pénalités sur marchés (et dédits payés sur achats et ventes)	Détail	Décoché	Décoché
+6712000000	Pénalités et amendes fiscales et pénales	Détail	Décoché	Décoché
+6713000000	Dons, libéralités	Détail	Décoché	Décoché
+6714000000	Créances devenues irrécouvrables dans l'exercice	Détail	Décoché	Décoché
+6715000000	Subventions accordées	Détail	Décoché	Décoché
+6717000000	Rappels d'impôts (autres qu'impôts sur les bénéfices)	Détail	Décoché	Décoché
+6718000000	Autres charges exceptionnelles sur opérations de gestion	Détail	Décoché	Décoché
+6720000000	Charges exceptionnelles sur exercices antérieurs	Détail	Décoché	Décoché
+6750000000	Valeurs comptables des éléments d'actif cédés	Racine	Décoché	Décoché
+6751000000	Immobilisations incorporelles	Détail	Décoché	Décoché
+6752000000	Immobilisations corporelles	Détail	Décoché	Décoché
+6756000000	Immobilisations financières	Détail	Décoché	Décoché
+6758000000	Autres éléments d'actif	Détail	Décoché	Décoché
+6780000000	Autres charges exceptionnelles	Racine	Décoché	Décoché
+6781000000	Malis provenant de clauses d'indexation	Détail	Décoché	Décoché
+6782000000	Lots	Détail	Décoché	Décoché
+6783000000	Malis provenant du rachat par l'entreprise d'actions	Détail	Décoché	Décoché
+6788000000	Charges exceptionnelles diverses	Détail	Décoché	Décoché
+68	DOTATIONS AUX AMORTISSEMENTS, DEPRECIATIONS ET PROVISIONS	Racine	Décoché	Décoché
+6810000000	Dotations - Charges d'exploitation	Racine	Décoché	Décoché
+6811000000	Dotations sur immobilisations incorporelles et corporelles	Racine	Décoché	Décoché
+6811100000	Immobilisations incorporelles	Détail	Décoché	Décoché
+6811200000	DOT.AMORT.IMMO.CORPO	Détail	Décoché	Décoché
+6812000000	Dotations - Charges d'exploitation à répartir	Détail	Décoché	Décoché
+6815000000	Dotations aux provisions d'exploitation	Détail	Décoché	Décoché
+6816000000	Dotations aux dépréciations des immobilisations	Racine	Décoché	Décoché
+6816100000	Immobilisations incorporelles	Détail	Décoché	Décoché
+6816200000	Immobilisations corporelles	Détail	Décoché	Décoché
+6817000000	Dotations aux dépréciations des actifs circulants	Racine	Décoché	Décoché
+6817300000	Stocks et en-cours	Détail	Décoché	Décoché
+6817400000	Créances	Détail	Décoché	Décoché
+6860000000	Dotations  - Charges financières	Racine	Décoché	Décoché
+6861000000	Dotations aux amortissements des primes de remboursement	Détail	Décoché	Décoché
+6865000000	Dotations aux provisions financières	Détail	Décoché	Décoché
+6866000000	Dotations aux dépréciations des éléments financiers	Racine	Décoché	Décoché
+6866200000	Immobilisations financières	Détail	Décoché	Décoché
+6866500000	Valeurs mobilières de placement	Détail	Décoché	Décoché
+6868000000	Autres dotations	Détail	Décoché	Décoché
+6870000000	Dotations - Charges exceptionnelles	Racine	Décoché	Décoché
+6871000000	Dotations aux amortissements exceptionnels des immo.	Détail	Décoché	Décoché
+6872000000	Dotations aux provisions réglementées (immobilisations)	Racine	Décoché	Décoché
+6872500000	Amortissements dérogatoires	Détail	Décoché	Décoché
+6873000000	Dotations aux provisions réglementées (stocks)	Détail	Décoché	Décoché
+6874000000	Dotations aux autres provisions réglementées	Détail	Décoché	Décoché
+6875000000	Dotations aux provisions exceptionnelles	Détail	Décoché	Décoché
+6876000000	Dotations aux dépréciations exceptionnelles	Détail	Décoché	Décoché
+69	PARTICIPATION DES SALARIES -IMPÔTS SUR LES BENEFICES	Racine	Décoché	Décoché
+6910000000	Participation des salariés aux résultats	Détail	Décoché	Décoché
+6950000000	Impôts sur les bénéfices	Racine	Décoché	Décoché
+6951000000	Impôts dus en France	Détail	Décoché	Décoché
+6952000000	Contribution additionnelle à l'impôt sur les bénéfices	Détail	Décoché	Décoché
+6954000000	Impôts dus à l'étranger	Détail	Décoché	Décoché
+6960000000	Suppléments d'impôts sur les sociétés liés aux distributions	Détail	Décoché	Décoché
+6970000000	Imposition forfaitaire annuelle des sociétés	Détail	Décoché	Décoché
+6980000000	Intégration fiscale	Racine	Décoché	Décoché
+6981000000	Intégration fiscale - Charges	Détail	Décoché	Décoché
+6989000000	Intégration fiscale - Produits	Détail	Décoché	Décoché
+6990000000	Produits - Reports en arrière des déficits	Détail	Décoché	Décoché
+7	COMPTES DE PRODUITS	Racine	Décoché	Décoché
+70	VENTES DE PRODUITS FABRIQUES, PRESTATIONS DE SERVICES	Racine	Décoché	Décoché
+7010000000	Ventes de produits finis	Racine	Décoché	Décoché
+7011000000	Produits finis (ou groupe) A	Détail	Décoché	Coché
+7012000000	Produits finis (ou groupe) B	Détail	Décoché	Décoché
+7020000000	Ventes de produits intermédiaires	Détail	Décoché	Décoché
+7030000000	Ventes de produits résiduels	Détail	Décoché	Décoché
+7040000000	Travaux	Racine	Décoché	Décoché
+7041000000	Travaux de catégorie (ou activités) A	Détail	Décoché	Décoché
+7042000000	Travaux de catégorie (ou activité) B	Détail	Décoché	Décoché
+7050000000	Etudes	Détail	Décoché	Décoché
+7060000000	PRESTATIONS DE SERVI	Détail	Décoché	Coché
+7061000000	Mutuelle	Détail	Décoché	Coché
+7062000000	libellé 70620000 à créér	Détail	Décoché	Coché
+7070000000	Ventes de marchandises	Racine	Décoché	Décoché
+7071000000	Marchandises (ou groupe) A	Détail	Décoché	Coché
+7072000000	Marchandises (ou groupe) B	Détail	Décoché	Coché
+7080000000	Produits des activités annexes	Racine	Décoché	Décoché
+7081000000	Produits des services exploités dans l’intérêt du personnel	Détail	Décoché	Décoché
+7082000000	Commissions et courtages	Détail	Décoché	Décoché
+7083000000	Locations diverses	Détail	Décoché	Décoché
+7084000000	Mise à disposition de personnel facturée	Détail	Décoché	Décoché
+7085000000	Ports et frais accessoires facturés	Détail	Décoché	Coché
+7086000000	Bonis sur reprises d'emballages consignés	Détail	Décoché	Décoché
+7087000000	Bonifications obtenues des clients et primes sur ventes	Détail	Décoché	Décoché
+7088000000	Autres produits activités annexes (cessions d'approvisionne	Détail	Décoché	Coché
+7090000000	RETROCESSION	Détail	Décoché	Coché
+7091000000	RRR sur ventes de produits finis	Détail	Décoché	Coché
+7092000000	RRR sur ventes de produits intermédiaires	Détail	Décoché	Décoché
+7094000000	RRR sur travaux	Détail	Décoché	Décoché
+7095000000	RRR sur études	Détail	Décoché	Décoché
+7096000000	RRR sur prestations de services	Détail	Décoché	Coché
+7097000000	RRR sur ventes de marchandises	Détail	Décoché	Coché
+7098000000	RRR sur produits des activités annexes	Détail	Décoché	Décoché
+71	PRODUCTION STOCKEE (OU DESTOCKAGE)	Racine	Décoché	Décoché
+7130000000	Variation des stocks (en-cours de production, produits)	Racine	Décoché	Décoché
+7133000000	Variation des en-cours de production de biens	Racine	Décoché	Décoché
+7133100000	Produits en cours	Détail	Décoché	Décoché
+7133500000	Travaux en cours	Détail	Décoché	Décoché
+7134000000	Variation des en-cours de production de services	Racine	Décoché	Décoché
+7134100000	Etudes en cours	Détail	Décoché	Décoché
+7134500000	Prestations de services en cours	Détail	Décoché	Décoché
+7135000000	Variation des stocks de produits	Racine	Décoché	Décoché
+7135100000	Produits intermédiaires	Détail	Décoché	Décoché
+7135500000	Produits finis	Détail	Décoché	Décoché
+7135800000	Produits résiduels	Détail	Décoché	Décoché
+72	PRODUCTION IMMOBILISEE	Racine	Décoché	Décoché
+7210000000	Immobilisations incorporelles	Détail	Décoché	Décoché
+7220000000	Immobilisations corporelles	Détail	Décoché	Décoché
+74	SUBVENTIONS D'EXPLOITATION	Racine	Décoché	Décoché
+75	AUTRES PRODUITS DE GESTION COURANTE	Racine	Décoché	Décoché
+7510000000	Redevances pour concessions, brevets, licences, marques,...	Racine	Décoché	Décoché
+7511000000	Redevances pour concessions, brevets, licences, marques,...	Détail	Décoché	Décoché
+7516000000	Droits d'auteur et de reproduction	Détail	Décoché	Décoché
+7518000000	Autres droits et valeurs similaires	Détail	Décoché	Décoché
+7520000000	Revenus des immeubles non affectés aux activités prof.	Détail	Décoché	Décoché
+7530000000	Jetons de présence et rémunérations d'administrateurs	Détail	Décoché	Décoché
+7540000000	Ristournes perçues des coopératives (provenant excédents)	Détail	Décoché	Décoché
+7550000000	Quote-part de résultat sur opérations faites en commun	Racine	Décoché	Décoché
+7551000000	Quote-part de perte transférée (comptabilité du gérant)	Détail	Décoché	Décoché
+7555000000	Quote-part de bénéfice attribué (comptabilité des associés)	Détail	Décoché	Décoché
+7580000000	Produits divers de gestion courante	Détail	Décoché	Décoché
+76	PRODUITS FINANCIERS	Racine	Décoché	Décoché
+7610000000	Produits de participations	Racine	Décoché	Décoché
+7611000000	Revenus des titres de participation	Détail	Décoché	Décoché
+7616000000	Revenus sur autres formes de participation	Détail	Décoché	Décoché
+7617000000	Revenus des créances rattachées à des participations	Détail	Décoché	Décoché
+7620000000	Produits des autres immobilisations financières	Racine	Décoché	Décoché
+7621000000	Revenus des titres immobilisés	Détail	Décoché	Décoché
+7626000000	Revenus des prêts	Détail	Décoché	Décoché
+7627000000	Revenus des créances immobilisées	Détail	Décoché	Décoché
+7630000000	Revenus des autres créances	Racine	Décoché	Décoché
+7631000000	Revenus sur créances commerciales	Détail	Décoché	Décoché
+7638000000	Revenus sur créances diverses	Détail	Décoché	Décoché
+7640000000	Revenus des valeurs mobilières de placement	Détail	Décoché	Décoché
+7650000000	Escomptes obtenus	Détail	Coché	Décoché
+7660000000	Gains de change	Détail	Décoché	Décoché
+7670000000	Produits nets sur cession de valeurs mobilières de placement	Détail	Décoché	Décoché
+7680000000	Autres produits financiers	Détail	Décoché	Décoché
+7688000000	Ecart de conversion (gain)	Détail	Décoché	Décoché
+77	PRODUITS EXCEPTIONNELS	Racine	Décoché	Décoché
+7710000000	Produits exceptionnels sur opérations de gestion	Racine	Décoché	Décoché
+7711000000	Dédits et pénalités perçus sur achats et sur ventes	Détail	Décoché	Décoché
+7713000000	Libéralités reçues	Détail	Décoché	Décoché
+7714000000	Rentrées sur créances amorties	Détail	Décoché	Décoché
+7715000000	Subventions d'équilibre	Détail	Décoché	Décoché
+7717000000	Dégrèvements d'impôts autres qu'impôts sur les bénéfices	Détail	Décoché	Décoché
+7718000000	Autres produits exceptionnels sur opérations de gestion	Détail	Décoché	Décoché
+7720000000	Produits exceptionnels sur exercices antérieurs	Détail	Décoché	Décoché
+7750000000	Produits des cessions éléments d'actif	Racine	Décoché	Décoché
+7751000000	Immobilisations incorporelles	Détail	Décoché	Décoché
+7752000000	Immobilisations corporelles	Détail	Décoché	Décoché
+7756000000	Immobilisations financières	Détail	Décoché	Décoché
+7758000000	Autres éléments d'actif	Détail	Décoché	Décoché
+7770000000	Quote-part des subventions d'invest. virée au résultat	Détail	Décoché	Décoché
+7780000000	Autres produits exceptionnels	Racine	Décoché	Décoché
+7781000000	Bonis provenant de clauses d'indexation	Détail	Décoché	Décoché
+7782000000	Lots	Détail	Décoché	Décoché
+7783000000	Bonis provenant du rachat par l'entreprise d'actions	Détail	Décoché	Décoché
+7788000000	Produits exceptionnels divers	Détail	Décoché	Décoché
+78	REPRISES SUR AMORTISSEMENTS, DEPRECIATIONS ET PROVISIONS	Racine	Décoché	Décoché
+7810000000	Reprises - Produits d'exploitation	Racine	Décoché	Décoché
+7811000000	Reprises sur amortissements des immobilisations	Racine	Décoché	Décoché
+7811100000	Immobilisations incorporelles	Détail	Décoché	Décoché
+7811200000	Immobilisations corporelles	Détail	Décoché	Décoché
+7815000000	Reprises sur provisions d'exploitation	Détail	Décoché	Décoché
+7816000000	Reprises sur dépréciations des immobilisations	Racine	Décoché	Décoché
+7816100000	Immobilisations incorporelles	Détail	Décoché	Décoché
+7816200000	Immobilisations corporelles	Détail	Décoché	Décoché
+7817000000	Reprises sur dépréciations des actifs circulants	Racine	Décoché	Décoché
+7817300000	Stocks et en-cours	Détail	Décoché	Décoché
+7817400000	Créances	Détail	Décoché	Décoché
+7860000000	Reprises - Produits financiers	Racine	Décoché	Décoché
+7865000000	Reprises sur provisions financières	Détail	Décoché	Décoché
+7866000000	Reprises sur dépréciations des éléments financiers	Racine	Décoché	Décoché
+7866200000	Immobilisations financières	Détail	Décoché	Décoché
+7866500000	Valeurs mobilières de placement	Détail	Décoché	Décoché
+7870000000	Reprises - Produits exceptionnels	Racine	Décoché	Décoché
+7872000000	Reprises sur provisions réglementées (immobilisations)	Racine	Décoché	Décoché
+7872500000	Amortissements dérogatoires	Détail	Décoché	Décoché
+7872600000	Provision spéciale de réévaluation	Détail	Décoché	Décoché
+7872700000	Plus-values réinvesties	Détail	Décoché	Décoché
+7873000000	Reprises sur provisions réglementées (stock)	Détail	Décoché	Décoché
+7874000000	Reprises sur autres provisions réglementées	Détail	Décoché	Décoché
+7875000000	Reprises sur provisions exceptionnelles	Détail	Décoché	Décoché
+7876000000	Reprises sur dépréciations exceptionnelles	Détail	Décoché	Décoché
+79	TRANSFERTS DE CHARGES	Racine	Décoché	Décoché
+7910000000	Transferts de charges d'exploitation	Détail	Décoché	Décoché
+7960000000	Transferts de charges financières	Détail	Décoché	Décoché
+7970000000	Transferts de charges exceptionnelles	Détail	Décoché	Décoché
+8	COMPTES SPECIAUX	Racine	Décoché	Décoché
+80	ENGAGEMENTS HORS BILAN	Racine	Décoché	Décoché
+8010000000	Engagements donnés par l'entreprise	Racine	Décoché	Décoché
+8011000000	Avals, cautions, garanties	Détail	Décoché	Décoché
+8014000000	Effets circulant sous l'endos de l'entreprise	Détail	Décoché	Décoché
+8016000000	Redevances crédit-bail restant à courir	Racine	Décoché	Décoché
+8016100000	Crédit-bail mobilier	Détail	Décoché	Décoché
+8016500000	Crédit-bail immobilier	Détail	Décoché	Décoché
+8018000000	Autres engagements donnés	Détail	Décoché	Décoché
+8020000000	Engagements reçus par l'entreprise	Racine	Décoché	Décoché
+8021000000	Avals, cautions, garanties	Détail	Décoché	Décoché
+8024000000	Créances escomptées non échues	Détail	Décoché	Décoché
+8026000000	Engagements reçus pour utilisation en crédit-bail	Racine	Décoché	Décoché
+8026100000	Crédit-bail mobilier	Détail	Décoché	Décoché
+8026500000	Crédit-bail immobilier	Détail	Décoché	Décoché
+8028000000	Autres engagements reçus	Détail	Décoché	Décoché
+8090000000	Contrepartie des engagements	Racine	Décoché	Décoché
+8091000000	Contrepartie 801	Détail	Décoché	Décoché
+8092000000	Contrepartie 802	Détail	Décoché	Décoché
+88	RESULTAT EN INSTANCE D'AFFECTATION	Racine	Décoché	Décoché
+89	BILAN	Racine	Décoché	Décoché
+				

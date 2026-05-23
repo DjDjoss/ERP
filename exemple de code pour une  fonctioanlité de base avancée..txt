@@ -1,0 +1,412 @@
+### 1. Configuration
+
+#### Paramètres Généraux
+
+```python
+class ParametresGeneraux:
+    def __init__(self, devise, exercice_comptable, periode_comptable, journal_comptable):
+        self.devise = devise
+        self.exercice_comptable = exercice_comptable
+        self.periode_comptable = periode_comptable
+        self.journal_comptable = journal_comptable
+        self.parametres_avances = {
+            "tva": 0.20,
+            "devise_secondaire": "USD",
+            "taux_change": 1.2
+        }
+
+    def afficher_parametres(self):
+        print(f"Devise: {self.devise}")
+        print(f"Exercice Comptable: {self.exercice_comptable}")
+        print(f"Période Comptable: {self.periode_comptable}")
+        print(f"Journal Comptable: {self.journal_comptable}")
+        print(f"Paramètres Avancés: {self.parametres_avances}")
+
+    def mettre_a_jour_parametres(self, **kwargs):
+        for key, value in kwargs.items():
+            if key in self.parametres_avances:
+                self.parametres_avances[key] = value
+            else:
+                setattr(self, key, value)
+
+# Exemple d'utilisation
+parametres = ParametresGeneraux("EUR", "2023", "Mensuel", "Journal Général")
+parametres.afficher_parametres()
+parametres.mettre_a_jour_parametres(tva=0.22, devise_secondaire="GBP")
+parametres.afficher_parametres()
+```
+
+#### Plan Comptable
+
+```python
+class Compte:
+    def __init__(self, numero, nom, type_compte, classe_compte):
+        self.numero = numero
+        self.nom = nom
+        self.type_compte = type_compte
+        self.classe_compte = classe_compte
+        self.solde = 0.0
+        self.ecritures = []
+
+    def crediter(self, montant, ecriture):
+        self.solde += montant
+        self.ecritures.append(ecriture)
+
+    def debiter(self, montant, ecriture):
+        if self.solde >= montant:
+            self.solde -= montant
+            self.ecritures.append(ecriture)
+        else:
+            raise ValueError("Solde insuffisant")
+
+    def afficher_solde(self):
+        print(f"Le solde du compte {self.numero} est de {self.solde}")
+
+    def afficher_ecritures(self):
+        for ecriture in self.ecritures:
+            print(f"Date: {ecriture.date}, Libellé: {ecriture.libelle}, Montant: {ecriture.montant}")
+
+class PlanComptable:
+    def __init__(self):
+        self.comptes = []
+
+    def ajouter_compte(self, compte):
+        self.comptes.append(compte)
+
+    def afficher_comptes(self):
+        for compte in self.comptes:
+            print(f"Numéro: {compte.numero}, Nom: {compte.nom}, Type: {compte.type_compte}, Classe: {compte.classe_compte}, Solde: {compte.solde}")
+
+    def rechercher_compte(self, numero):
+        for compte in self.comptes:
+            if compte.numero == numero:
+                return compte
+        return None
+
+# Exemple d'utilisation
+plan_comptable = PlanComptable()
+compte1 = Compte("12345", "Compte Courant", "Actif", "Classe A")
+compte2 = Compte("67890", "Compte de Résultat", "Passif", "Classe B")
+plan_comptable.ajouter_compte(compte1)
+plan_comptable.ajouter_compte(compte2)
+plan_comptable.afficher_comptes()
+```
+
+#### Utilisateurs et Rôles
+
+```python
+class Utilisateur:
+    def __init__(self, nom, email, role, permissions):
+        self.nom = nom
+        self.email = email
+        self.role = role
+        self.permissions = permissions
+
+    def afficher_informations(self):
+        print(f"Nom: {self.nom}, Email: {self.email}, Rôle: {self.role}, Permissions: {self.permissions}")
+
+    def ajouter_permission(self, permission):
+        if permission not in self.permissions:
+            self.permissions.append(permission)
+
+    def supprimer_permission(self, permission):
+        if permission in self.permissions:
+            self.permissions.remove(permission)
+
+class GestionUtilisateurs:
+    def __init__(self):
+        self.utilisateurs = []
+
+    def ajouter_utilisateur(self, utilisateur):
+        self.utilisateurs.append(utilisateur)
+
+    def afficher_utilisateurs(self):
+        for utilisateur in self.utilisateurs:
+            utilisateur.afficher_informations()
+
+    def rechercher_utilisateur(self, email):
+        for utilisateur in self.utilisateurs:
+            if utilisateur.email == email:
+                return utilisateur
+        return None
+
+# Exemple d'utilisation
+gestion_utilisateurs = GestionUtilisateurs()
+utilisateur1 = Utilisateur("Jean Dupont", "jean.dupont@example.com", "Comptable", ["lecture", "écriture"])
+utilisateur2 = Utilisateur("Marie Martin", "marie.martin@example.com", "Administrateur", ["lecture", "écriture", "suppression"])
+gestion_utilisateurs.ajouter_utilisateur(utilisateur1)
+gestion_utilisateurs.ajouter_utilisateur(utilisateur2)
+gestion_utilisateurs.afficher_utilisateurs()
+```
+
+### 2. Comptabilité Générale
+
+#### Saisie des Écritures Comptables
+
+```python
+class EcritureComptable:
+    def __init__(self, date, libelle, montant, compte_debit, compte_credit, reference, piece_justificative):
+        self.date = date
+        self.libelle = libelle
+        self.montant = montant
+        self.compte_debit = compte_debit
+        self.compte_credit = compte_credit
+        self.reference = reference
+        self.piece_justificative = piece_justificative
+        self.statut = "En attente"
+
+    def afficher_ecriture(self):
+        print(f"Date: {self.date}, Libellé: {self.libelle}, Montant: {self.montant}, Compte Débit: {self.compte_debit.numero}, Compte Crédit: {self.compte_credit.numero}, Référence: {self.reference}, Pièce Justificative: {self.piece_justificative}, Statut: {self.statut}")
+
+    def valider(self):
+        self.statut = "Validé"
+
+class GestionEcritures:
+    def __init__(self):
+        self.ecritures = []
+
+    def ajouter_ecriture(self, ecriture):
+        self.ecritures.append(ecriture)
+        ecriture.compte_debit.debiter(ecriture.montant, ecriture)
+        ecriture.compte_credit.crediter(ecriture.montant, ecriture)
+
+    def afficher_ecritures(self):
+        for ecriture in self.ecritures:
+            ecriture.afficher_ecriture()
+
+    def valider_ecritures(self):
+        for ecriture in self.ecritures:
+            if ecriture.statut == "En attente":
+                ecriture.valider()
+
+# Exemple d'utilisation
+gestion_ecritures = GestionEcritures()
+compte1 = Compte("12345", "Compte Courant", "Actif", "Classe A")
+compte2 = Compte("67890", "Compte de Résultat", "Passif", "Classe B")
+ecriture1 = EcritureComptable("2023-10-01", "Vente de produits", 1000.0, compte1, compte2, "REF001", "Facture.pdf")
+gestion_ecritures.ajouter_ecriture(ecriture1)
+gestion_ecritures.afficher_ecritures()
+gestion_ecritures.valider_ecritures()
+gestion_ecritures.afficher_ecritures()
+```
+
+#### Lettrage des Écritures
+
+```python
+class LettrageEcriture:
+    def __init__(self, ecriture1, ecriture2):
+        self.ecriture1 = ecriture1
+        self.ecriture2 = ecriture2
+        self.statut = "En attente"
+
+    def lettrage(self):
+        if self.ecriture1.montant == self.ecriture2.montant:
+            self.statut = "Letté"
+            print(f"Lettrage entre {self.ecriture1.libelle} et {self.ecriture2.libelle}")
+        else:
+            raise ValueError("Les montants des écritures ne sont pas égaux")
+
+    def afficher_lettrage(self):
+        print(f"Écriture 1: {self.ecriture1.libelle}, Écriture 2: {self.ecriture2.libelle}, Statut: {self.statut}")
+
+# Exemple d'utilisation
+ecriture1 = EcritureComptable("2023-10-01", "Vente de produits", 1000.0, compte1, compte2, "REF001", "Facture.pdf")
+ecriture2 = EcritureComptable("2023-10-02", "Paiement vente", 1000.0, compte2, compte1, "REF002", "Reçu.pdf")
+lettrage1 = LettrageEcriture(ecriture1, ecriture2)
+lettrage1.lettrage()
+lettrage1.afficher_lettrage()
+```
+
+#### Clôture des Écritures
+
+```python
+class ClotureEcritures:
+    def __init__(self, periode, ecritures):
+        self.periode = periode
+        self.ecritures = ecritures
+        self.statut = "En attente"
+
+    def cloturer(self):
+        for ecriture in self.ecritures:
+            if ecriture.statut != "Validé":
+                raise ValueError("Toutes les écritures doivent être validées")
+        self.statut = "Clôturé"
+        print(f"Clôture des écritures pour la période {self.periode}")
+
+    def afficher_cloture(self):
+        print(f"Période: {self.periode}, Statut: {self.statut}")
+
+# Exemple d'utilisation
+ecritures = [ecriture1, ecriture2]
+cloture = ClotureEcritures("Octobre 2023", ecritures)
+cloture.cloturer()
+cloture.afficher_cloture()
+```
+
+#### Reporting
+
+```python
+class Reporting:
+    def __init__(self, ecritures):
+        self.ecritures = ecritures
+
+    def generer_bilan(self):
+        print("Bilan:")
+        for ecriture in self.ecritures:
+            print(f"{ecriture.date}: {ecriture.libelle} - {ecriture.montant}")
+
+    def generer_compte_resultat(self):
+        print("Compte de Résultat:")
+        for ecriture in self.ecritures:
+            print(f"{ecriture.date}: {ecriture.libelle} - {ecriture.montant}")
+
+    def generer_grand_livre(self, compte):
+        print(f"Grand Livre pour le compte {compte.numero}:")
+        for ecriture in compte.ecritures:
+            print(f"{ecriture.date}: {ecriture.libelle} - {ecriture.montant}")
+
+# Exemple d'utilisation
+reporting = Reporting(ecritures)
+reporting.generer_bilan()
+reporting.generer_compte_resultat()
+reporting.generer_grand_livre(compte1)
+```
+
+### 3. Comptabilité Analytique
+
+#### Gestion des Centres de Coûts
+
+```python
+class CentreCout:
+    def __init__(self, code, nom, responsable, budget):
+        self.code = code
+        self.nom = nom
+        self.responsable = responsable
+        self.budget = budget
+        self.ecritures = []
+
+    def ajouter_ecriture(self, ecriture):
+        self.ecritures.append(ecriture)
+
+    def afficher_centre_cout(self):
+        print(f"Code: {self.code}, Nom: {self.nom}, Responsable: {self.responsable}, Budget: {self.budget}")
+
+    def afficher_ecritures(self):
+        for ecriture in self.ecritures:
+            print(f"Date: {ecriture.date}, Libellé: {ecriture.libelle}, Montant: {ecriture.montant}")
+
+class GestionCentresCout:
+    def __init__(self):
+        self.centres_cout = []
+
+    def ajouter_centre_cout(self, centre_cout):
+        self.centres_cout.append(centre_cout)
+
+    def afficher_centres_cout(self):
+        for centre_cout in self.centres_cout:
+            centre_cout.afficher_centre_cout()
+
+    def rechercher_centre_cout(self, code):
+        for centre_cout in self.centres_cout:
+            if centre_cout.code == code:
+                return centre_cout
+        return None
+
+# Exemple d'utilisation
+gestion_centres_cout = GestionCentresCout()
+centre_cout1 = CentreCout("CC001", "Vente", "Jean Dupont", 10000.0)
+centre_cout2 = CentreCout("CC002", "Production", "Marie Martin", 20000.0)
+gestion_centres_cout.ajouter_centre_cout(centre_cout1)
+gestion_centres_cout.ajouter_centre_cout(centre_cout2)
+gestion_centres_cout.afficher_centres_cout()
+```
+
+#### Saisie des Écritures Analytiques
+
+```python
+class EcritureAnalytique:
+    def __init__(self, date, libelle, montant, centre_cout, reference, piece_justificative):
+        self.date = date
+        self.libelle = libelle
+        self.montant = montant
+        self.centre_cout = centre_cout
+        self.reference = reference
+        self.piece_justificative = piece_justificative
+        self.statut = "En attente"
+
+    def afficher_ecriture(self):
+        print(f"Date: {self.date}, Libellé: {self.libelle}, Montant: {self.montant}, Centre de Coût: {self.centre_cout.code}, Référence: {self.reference}, Pièce Justificative: {self.piece_justificative}, Statut: {self.statut}")
+
+    def valider(self):
+        self.statut = "Validé"
+
+class GestionEcrituresAnalytiques:
+    def __init__(self):
+        self.ecritures = []
+
+    def ajouter_ecriture(self, ecriture):
+        self.ecritures.append(ecriture)
+        ecriture.centre_cout.ajouter_ecriture(ecriture)
+
+    def afficher_ecritures(self):
+        for ecriture in self.ecritures:
+            ecriture.afficher_ecriture()
+
+    def valider_ecritures(self):
+        for ecriture in self.ecritures:
+            if ecriture.statut == "En attente":
+                ecriture.valider()
+
+# Exemple d'utilisation
+gestion_ecritures_analytiques = GestionEcrituresAnalytiques()
+ecriture1 = EcritureAnalytique("2023-10-01", "Vente de produits", 1000.0, centre_cout1, "REF001", "Facture.pdf")
+gestion_ecritures_analytiques.ajouter_ecriture(ecriture1)
+gestion_ecritures_analytiques.afficher_ecritures()
+gestion_ecritures_analytiques.valider_ecritures()
+gestion_ecritures_analytiques.afficher_ecritures()
+```
+
+#### Reporting Analytique
+
+```python
+class ReportingAnalytique:
+    def __init__(self, centres_cout):
+        self.centres_cout = centres_cout
+
+    def generer_reporting_centre_cout(self, centre_cout):
+        print(f"Reporting pour le centre de coût {centre_cout.code}:")
+        for ecriture in centre_cout.ecritures:
+            print(f"{ecriture.date}: {ecriture.libelle} - {ecriture.montant}")
+
+    def generer_reporting_croise(self):
+        print("Reporting Croisé:")
+        for centre_cout in self.centres_cout:
+            print(f"Centre de Coût: {centre_cout.code}")
+            for ecriture in centre_cout.ecritures:
+                print(f"{ecriture.date}: {ecriture.libelle} - {ecriture.montant}")
+
+# Exemple d'utilisation
+reporting_analytique = ReportingAnalytique([centre_cout1, centre_cout2])
+reporting_analytique.generer_reporting_centre_cout(centre_cout1)
+reporting_analytique.generer_reporting_croise()
+```
+
+### 4. Gestion des Budgets
+
+#### Création des Budgets
+
+```python
+class Budget:
+    def __init__(self, periode, montant, centre_cout):
+        self.periode = periode
+        self.montant = montant
+        self.centre_cout = centre_cout
+        self.ecritures = []
+
+    def ajouter_ecriture(self, ecriture):
+        self.ecritures.append(ecriture)
+
+    def afficher_budget(self):
+        print(f"Période: {self.periode}, Montant: {self.montant}, Centre de Coût: {self.centre_cout.code}")
+
+    def afficher

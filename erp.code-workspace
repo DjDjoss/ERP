@@ -1,0 +1,16 @@
+{
+    // 📁 Liste des dossiers inclus dans ton workspace ERP
+    "folders": [
+        { "path": "backend" },     // API FastAPI
+        { "path": "frontend" },    // Interface PyQt
+        { "path": "database" },    // Scripts SQL / migrations
+        { "path": "automations" }, // Workflows n8n
+        { "path": "ai" }           // Scripts IA / prompts / intégrations Ollama
+    ],
+
+    // ⚙️ Réglages spécifiques à ce workspace
+    "settings": {
+        // Interpréteur Python utilisé pour tout le workspace
+        "python.defaultInterpreterPath": "C:/Users/DJOSS BUREAU/AppData/Local/Programs/Python/Python312/python.exe"
+    }
+}

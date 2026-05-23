@@ -1,0 +1,269 @@
+Module Comptabilité-Finance
+│
+├── .env.example
+├── .gitignore
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+├── docker-compose.yml
+├── Makefile
+├── requirements.txt
+├── core/
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   ├── wsgi.py
+│   ├── asgi.py
+│   ├── management/
+│   │   ├── __init__.py
+│   │   └── commands/
+│   │       ├── __init__.py
+│   │       ├── createsuperuser.py
+│   │       └── seed_demo_data.py
+│
+├── configuration/
+│   ├── __init__.py
+│   ├── parametres_generaux.py
+│   ├── plan_comptable.py
+│   └── utilisateurs_roles.py
+│
+├── comptabilite_generale/
+│   ├── __init__.py
+│   ├── saisie_ecritures.py
+│   ├── validation_ecritures.py
+│   ├── lettrage_ecritures.py
+│   ├── cloture_ecritures.py
+│   └── reporting.py
+│
+├── comptabilite_analytique/
+│   ├── __init__.py
+│   ├── gestion_centres_cout.py
+│   ├── saisie_ecritures_analytiques.py
+│   └── reporting_analytique.py
+│
+├── gestion_budgets/
+│   ├── __init__.py
+│   ├── creation_budgets.py
+│   ├── suivi_budgets.py
+│   └── cloture_budgets.py
+│
+├── gestion_factures/
+│   ├── __init__.py
+│   ├── saisie_factures.py
+│   ├── validation_factures.py
+│   ├── paiement_factures.py
+│   └── reporting_factures.py
+│
+├── gestion_paiements/
+│   ├── __init__.py
+│   ├── saisie_paiements.py
+│   ├── validation_paiements.py
+│   └── reporting_paiements.py
+│
+├── integration_crm/
+│   ├── __init__.py
+│   ├── gestion_clients_fournisseurs.py
+│   ├── integration_factures_paiements.py
+│   └── reporting_croise.py
+│
+├── integration_ged/
+│   ├── __init__.py
+│   ├── stockage_documents.py
+│   └── gestion_acces.py
+│
+├── securite_conformite/
+│   ├── __init__.py
+│   ├── authentification_autorisation.py
+│   ├── chiffrement_donnees.py
+│   └── conformite.py
+│
+├── tests/
+│   ├── __init__.py
+│   ├── test_configuration.py
+│   ├── test_comptabilite_generale.py
+│   ├── test_comptabilite_analytique.py
+│   ├── test_gestion_budgets.py
+│   ├── test_gestion_factures.py
+│   ├── test_gestion_paiements.py
+│   ├── test_integration_crm.py
+│   ├── test_integration_ged.py
+│   └── test_securite_conformite.py
+│
+└── docs/
+    ├── architecture.md
+    ├── installation.md
+    ├── utilisation.md
+    └── api.md
+```
+
+---
+
+### Explication de l'Arbre
+
+1. **Fichiers de Configuration et de Projet** :
+   - `.env.example` : Exemple de fichier de configuration des variables d'environnement.
+   - `.gitignore` : Fichier pour ignorer certains fichiers dans Git.
+   - `CONTRIBUTING.md` : Guide pour les contributeurs.
+   - `LICENSE` : Fichier de licence du projet.
+   - `README.md` : Documentation de base du projet.
+   - `docker-compose.yml` : Fichier de configuration pour Docker Compose.
+   - `Makefile` : Fichier pour les commandes Make.
+   - `requirements.txt` : Liste des dépendances Python.
+
+2. **Dossier `core`** :
+   - `__init__.py` : Fichier d'initialisation du module.
+   - `settings.py` : Configuration des paramètres de l'application.
+   - `urls.py` : Configuration des URLs de l'application.
+   - `wsgi.py` : Configuration pour le serveur WSGI.
+   - `asgi.py` : Configuration pour le serveur ASGI.
+   - `management/` : Dossier pour les commandes de gestion.
+     - `__init__.py` : Fichier d'initialisation du module.
+     - `commands/` : Dossier pour les commandes personnalisées.
+       - `__init__.py` : Fichier d'initialisation du module.
+       - `createsuperuser.py` : Commande pour créer un superutilisateur.
+       - `seed_demo_data.py` : Commande pour peupler la base de données avec des données de démonstration.
+
+3. **Dossier `configuration`** :
+   - `__init__.py` : Fichier d'initialisation du module.
+   - `parametres_generaux.py` : Gestion des paramètres généraux.
+   - `plan_comptable.py` : Gestion du plan comptable.
+   - `utilisateurs_roles.py` : Gestion des utilisateurs et des rôles.
+
+4. **Dossier `comptabilite_generale`** :
+   - `__init__.py` : Fichier d'initialisation du module.
+   - `saisie_ecritures.py` : Saisie des écritures comptables.
+   - `validation_ecritures.py` : Validation des écritures comptables.
+   - `lettrage_ecritures.py` : Lettrage des écritures comptables.
+   - `cloture_ecritures.py` : Clôture des écritures comptables.
+   - `reporting.py` : Génération des rapports financiers.
+
+5. **Dossier `comptabilite_analytique`** :
+   - `__init__.py` : Fichier d'initialisation du module.
+   - `gestion_centres_cout.py` : Gestion des centres de coûts.
+   - `saisie_ecritures_analytiques.py` : Saisie des écritures analytiques.
+   - `reporting_analytique.py` : Génération des rapports analytiques.
+
+6. **Dossier `gestion_budgets`** :
+   - `__init__.py` : Fichier d'initialisation du module.
+   - `creation_budgets.py` : Création des budgets.
+   - `suivi_budgets.py` : Suivi des budgets.
+   - `cloture_budgets.py` : Clôture des budgets.
+
+7. **Dossier `gestion_factures`** :
+   - `__init__.py` : Fichier d'initialisation du module.
+   - `saisie_factures.py` : Saisie des factures.
+   - `validation_factures.py` : Validation des factures.
+   - `paiement_factures.py` : Paiement des factures.
+   - `reporting_factures.py` : Génération des rapports de factures.
+
+8. **Dossier `gestion_paiements`** :
+   - `__init__.py` : Fichier d'initialisation du module.
+   - `saisie_paiements.py` : Saisie des paiements.
+   - `validation_paiements.py` : Validation des paiements.
+   - `reporting_paiements.py` : Génération des rapports de paiements.
+
+9. **Dossier `integration_crm`** :
+   - `__init__.py` : Fichier d'initialisation du module.
+   - `gestion_clients_fournisseurs.py` : Gestion des clients et fournisseurs.
+   - `integration_factures_paiements.py` : Intégration des factures et paiements.
+   - `reporting_croise.py` : Génération des rapports croisés.
+
+10. **Dossier `integration_ged`** :
+    - `__init__.py` : Fichier d'initialisation du module.
+    - `stockage_documents.py` : Stockage des documents comptables.
+    - `gestion_acces.py` : Gestion des accès aux documents.
+
+11. **Dossier `securite_conformite`** :
+    - `__init__.py` : Fichier d'initialisation du module.
+    - `authentification_autorisation.py` : Authentification et autorisation.
+    - `chiffrement_donnees.py` : Chiffrement des données.
+    - `conformite.py` : Conformité avec les normes comptables.
+
+12. **Dossier `tests`** :
+    - `__init__.py` : Fichier d'initialisation du module.
+    - `test_configuration.py` : Tests pour la configuration.
+    - `test_comptabilite_generale.py` : Tests pour la comptabilité générale.
+    - `test_comptabilite_analytique.py` : Tests pour la comptabilité analytique.
+    - `test_gestion_budgets.py` : Tests pour la gestion des budgets.
+    - `test_gestion_factures.py` : Tests pour la gestion des factures.
+    - `test_gestion_paiements.py` : Tests pour la gestion des paiements.
+    - `test_integration_crm.py` : Tests pour l'intégration avec le CRM.
+    - `test_integration_ged.py` : Tests pour l'intégration avec le GED.
+    - `test_securite_conformite.py` : Tests pour la sécurité et la conformité.
+
+13. **Dossier `docs`** :
+    - `architecture.md` : Documentation de l'architecture.
+    - `installation.md` : Documentation de l'installation.
+    - `utilisation.md` : Documentation de l'utilisation.
+    - `api.md` : Documentation de l'API.
+
+---
+
+### Exemple de Code pour une Fonctionnalité de Base
+
+Voici un exemple de code pour une fonctionnalité de base de gestion des comptes :
+
+```python
+class Compte:
+    def __init__(self, numero, nom, type_compte, classe_compte):
+        self.numero = numero
+        self.nom = nom
+        self.type_compte = type_compte
+        self.classe_compte = classe_compte
+        self.solde = 0.0
+        self.ecritures = []
+
+    def crediter(self, montant, ecriture):
+        self.solde += montant
+        self.ecritures.append(ecriture)
+
+    def debiter(self, montant, ecriture):
+        if self.solde >= montant:
+            self.solde -= montant
+            self.ecritures.append(ecriture)
+        else:
+            raise ValueError("Solde insuffisant")
+
+    def afficher_solde(self):
+        print(f"Le solde du compte {self.numero} est de {self.solde}")
+
+    def afficher_ecritures(self):
+        for ecriture in self.ecritures:
+            print(f"Date: {ecriture.date}, Libellé: {ecriture.libelle}, Montant: {ecriture.montant}")
+
+# Exemple d'utilisation
+compte1 = Compte("12345", "Compte Courant", "Actif", "Classe A")
+compte1.crediter(1000.0, {"date": "2023-10-01", "libelle": "Vente de produits", "montant": 1000.0})
+compte1.debiter(500.0, {"date": "2023-10-02", "libelle": "Paiement vente", "montant": 500.0})
+compte1.afficher_solde()
+compte1.afficher_ecritures()
+```
+
+---
+
+### Exemple de Test Unitaire
+
+Voici un exemple de test unitaire pour la classe `Compte` :
+
+```python
+import unittest
+
+class TestCompte(unittest.TestCase):
+    def setUp(self):
+        self.compte = Compte("12345", "Compte Courant", "Actif", "Classe A")
+
+    def test_crediter(self):
+        self.compte.crediter(1000.0, {"date": "2023-10-01", "libelle": "Vente de produits", "montant": 1000.0})
+        self.assertEqual(self.compte.solde, 1000.0)
+
+    def test_debiter(self):
+        self.compte.crediter(1000.0, {"date": "2023-10-01", "libelle": "Vente de produits", "montant": 1000.0})
+        self.compte.debiter(500.0, {"date": "2023-10-02", "libelle": "Paiement vente", "montant": 500.0})
+        self.assertEqual(self.compte.solde, 500.0)
+
+    def test_debiter_solde_insuffisant(self):
+        with self.assertRaises(ValueError):
+            self.compte.debiter(500.0, {"date": "2023-10-02", "libelle": "Paiement vente", "montant": 500.0})
+
+if __name__ == '__main__':
+    unittest.main()

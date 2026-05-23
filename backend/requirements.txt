@@ -1,0 +1,19 @@
+# ============================================================
+#  ERP ROSAN - Dépendances Python
+# ============================================================
+
+# Dépendances critiques
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+pydantic
+httpx
+
+# Dépendances optionnelles (fonctionnalités avancées)
+# reportlab
+# pandas
+# openpyxl
+# python-multipart
+# jinja2
+# weasyprint
