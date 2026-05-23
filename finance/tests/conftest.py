@@ -12,6 +12,17 @@ from backend.connection_manager import Base
 @pytest.fixture(scope="session")
 def test_engine():
     """Crée un moteur de base de données de test en mémoire"""
+    # Importer tous les modèles pour qu'ils soient enregistrés dans Base.metadata
+    from dossiers.models import Dossier, DossierDocument, DossierContact
+    from finance.models import (
+        FiscalYear, AccountingJournal, AccountingAccount, AnalyticSection, AnalyticAxis,
+        AccountingEntry, AccountingEntryLine,
+        BankAccount, BankTransaction, BankReconciliation,
+        TrialBalance, GeneralLedger,
+        Asset, AssetDepreciation,
+        AuditLog,
+    )
+    
     engine = create_engine("sqlite:///:memory:", echo=False)
     Base.metadata.create_all(bind=engine)
     return engine

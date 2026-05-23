@@ -84,8 +84,8 @@ class AuditLog(Base):
     # Timestamp
     action_date = Column(DateTime(timezone=True), nullable=False, server_default=func.now())
     
-    # Métadonnées additionnelles
-    metadata = Column(Text, nullable=True)  # JSON pour données complémentaires
+    # Métadonnées additionnelles (renommé pour éviter conflit avec SQLAlchemy)
+    audit_metadata = Column("metadata", Text, nullable=True)  # JSON pour données complémentaires
 
     def __repr__(self):
         return f"<AuditLog(id={self.id}, action='{self.action_type}', entity='{self.entity_type}')>"
@@ -93,7 +93,7 @@ class AuditLog(Base):
     @classmethod
     def log(cls, db_session, action_type: str, entity_type: str, entity_id: int = None,
             entity_label: str = None, old_values: dict = None, new_values: dict = None,
-            user_login: str = None, user_ip: str = None, metadata: dict = None):
+            user_login: str = None, user_ip: str = None, audit_metadata: dict = None):
         """
         Crée un nouvel enregistrement de log d'audit.
         
@@ -107,7 +107,7 @@ class AuditLog(Base):
             new_values : Nouvelles valeurs (dict)
             user_login : Identifiant utilisateur
             user_ip : Adresse IP
-            metadata : Métadonnées additionnelles
+            audit_metadata : Métadonnées additionnelles
         """
         import json
         
@@ -121,7 +121,7 @@ class AuditLog(Base):
             new_values=json.dumps(new_values) if new_values else None,
             user_login=user_login,
             user_ip=user_ip,
-            metadata=json.dumps(metadata) if metadata else None,
+            audit_metadata=json.dumps(audit_metadata) if audit_metadata else None,
         )
         
         db_session.add(log_entry)
