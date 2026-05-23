@@ -1,0 +1,23 @@
+# Développement et tests
+pytest==8.3.5
+pytest-cov==6.0.0
+factory-boy==3.3.1
+faker==33.1.0
+
+# Qualité de code
+black==24.10.0
+flake8==7.1.1
+isort==5.13.2
+pylint==3.3.2
+
+# Base de données (développement)
+psycopg2-binary==2.9.10
+
+# API
+fastapi==0.115.6
+uvicorn==0.34.0
+pydantic==2.10.4
+
+# ORM
+sqlalchemy==2.0.36
+alembic==1.14.0
