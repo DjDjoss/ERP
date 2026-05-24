@@ -50,8 +50,15 @@ if not defined PYTHON_EXE (
 
 REM ---------------------------------------------------------------------------
 REM Lancer l'ERP (main.py = orchestrateur + backend + PostgreSQL)
+REM OU lancer directement le module comptable si demandé
 REM ---------------------------------------------------------------------------
-"%PYTHON_EXE%" main.py
+set "MODE=%1"
+if /i "%MODE%"=="compta" (
+    echo Lancement du module Comptabilite uniquement...
+    "%PYTHON_EXE%" -c "from modules.accounting.accounting_main_window import launch_accounting_module; launch_accounting_module()"
+) else (
+    "%PYTHON_EXE%" main.py
+)
 if errorlevel 1 (
     echo.
     echo L'ERP s'est arrete avec une erreur. Consulte le message ci-dessus.

@@ -1,11 +1,1 @@
-```
-# Compiled Python files
-*.pyc
-__pycache__/
-
-# Coverage reports
-.coverage
-
-# Logs
-*.log
-```
+Nothing needs to be added to .gitignore since the changes only include Python source files (.py), a markdown file (.md), and a batch file (.bat), which are all source/config files that should not be ignored.
