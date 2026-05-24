@@ -1,274 +1,340 @@
-# 📋 TODOO - TÂCHES RESTANTES DJOSS-ERP
+# TODOO - Ce qui reste à faire pour le projet global Djoss ERP
 
-**Dernière mise à jour** : 2025
-**Module en cours** : Finance (Phase 2 - Priorité CRITIQUE)
-
----
-
-## 🔴 PRIORITÉ 1 : FINALISER MODULE FINANCE
-
-### API REST (FastAPI)
-- [ ] **finance/api/schemas.py** - Créer les schémas Pydantic
-  - [ ] FiscalYearSchema (create, update, response)
-  - [ ] AccountingJournalSchema
-  - [ ] AccountingAccountSchema
-  - [ ] AccountingEntrySchema (avec lignes imbriquées)
-  - [ ] AccountingEntryLineSchema
-  - [ ] BankAccountSchema
-  - [ ] BankTransactionSchema
-  - [ ] TrialBalanceSchema
-  - [ ] GeneralLedgerSchema
-
-- [ ] **finance/api/routes.py** - Créer les endpoints REST
-  - [ ] `POST /api/fiscal-years/` - Créer exercice
-  - [ ] `GET /api/fiscal-years/` - Lister exercices
-  - [ ] `GET /api/fiscal-years/{id}` - Détail exercice
-  - [ ] `PUT /api/fiscal-years/{id}` - Modifier exercice
-  - [ ] `POST /api/journals/` - Créer journal
-  - [ ] `GET /api/journals/` - Lister journaux
-  - [ ] `POST /api/accounts/` - Créer compte
-  - [ ] `GET /api/accounts/` - Lister comptes (PCG)
-  - [ ] `POST /api/entries/` - Créer écriture
-  - [ ] `GET /api/entries/` - Lister écritures (filtres)
-  - [ ] `GET /api/entries/{id}` - Détail écriture
-  - [ ] `PUT /api/entries/{id}` - Modifier écriture
-  - [ ] `POST /api/entries/{id}/validate` - Valider écriture
-  - [ ] `POST /api/entries/{id}/cancel` - Annuler écriture
-  - [ ] `DELETE /api/entries/{id}` - Supprimer écriture
-  - [ ] `GET /api/reports/trial-balance/` - Balance
-  - [ ] `GET /api/reports/general-ledger/` - Grand Livre
-  - [ ] `GET /api/reports/income-statement/` - Compte de résultat
-  - [ ] `POST /api/pcg/import/` - Importer PCG
-  - [ ] `POST /api/lettering/auto/` - Lettrage auto
-  - [ ] `POST /api/lettering/manual/` - Lettrage manuel
-  - [ ] `GET /api/bank/suggestions/` - Suggestions rapprochement
-  - [ ] `POST /api/bank/reconcile/` - Rapprocher transaction
-
-- [ ] **finance/api/__init__.py** - Initialisation module API
-
-### Tests Complémentaires
-- [ ] **finance/tests/test_pcg_loader.py**
-  - [ ] Test import fichier PCG
-  - [ ] Test création journaux standards
-  - [ ] Test résumé PCG
-
-- [ ] **finance/tests/test_financial_reports.py**
-  - [ ] Test balance générale
-  - [ ] Test grand livre
-  - [ ] Test compte de résultat
-
-- [ ] **finance/tests/test_lettering.py**
-  - [ ] Test lettrage automatique
-  - [ ] Test lettrage manuel
-  - [ ] Test détection non-lettrés
-
-- [ ] **finance/tests/test_bank_reconciliation.py**
-  - [ ] Test suggestions
-  - [ ] Test rapprochement
-  - [ ] Test complétion
-
-- [ ] **finance/factories/factories.py** - Factory Boy
-  - [ ] FiscalYearFactory
-  - [ ] AccountingJournalFactory
-  - [ ] AccountingAccountFactory
-  - [ ] AccountingEntryFactory
-  - [ ] AccountingEntryLineFactory
-  - [ ] BankAccountFactory
-  - [ ] BankTransactionFactory
-
-### Intégration Backend
-- [ ] **backend/main.py** - Inclure routes finance
-  ```python
-  from finance.api.routes import router as finance_router
-  app.include_router(finance_router, prefix="/api/finance", tags=["Finance"])
-  ```
-
-- [ ] **Migrations Alembic**
-  - [ ] Configurer Alembic pour le projet
-  - [ ] Générer migration initiale pour tables finance
-  - [ ] Tester migration sur PostgreSQL
-
-### Documentation API
-- [ ] Swagger/OpenAPI - Vérifier que tous les endpoints sont documentés
-- [ ] Exemples de requêtes/réponses dans les docstrings
+## 🎯 OBJECTIF GLOBAL
+Créer un ERP complet de type Sage/Odoo/Dolibarr avec tous les modules métier intégrés.
 
 ---
 
-## 🟠 PRIORITÉ 2 : FRONTEND PY SIDE6
+## 📋 MODULE FINANCE - À FINALISER
 
-### Refonte UI Comptabilité
-- [ ] **modules/accounting/views.py** - Nouvelle interface à onglets
-  - [ ] Onglet "Tableau de bord" - Dashboard 2026
-  - [ ] Onglet "Exercices" - Gestion fiscal years
-  - [ ] Onglet "Journaux" - Liste + création
-  - [ ] Onglet "Plan Comptable" - Arborescence PCG
-  - [ ] Onglet "Écritures" - Saisie + liste + filtres
-  - [ ] Onglet "Rapports" - Balance, Grand Livre, etc.
-  - [ ] Onglet "Tiers" - Lettrage clients/fournisseurs
-  - [ ] Onglet "Banque" - Rapprochement
+### Haute Priorité
+- [ ] **Liasses fiscales** : Formulaire 2035, 2050, 2051, 2055, 2056, 2057, 2058
+- [ ] **Budgets** : Création, suivi, alertes budgétaires
+- [ ] **Tableaux de flux de trésorerie** : Méthode directe et indirecte
+- [ ] **États financiers complets** : Bilan, Compte de résultat, Annexes
+- [ ] **Clôture d'exercice** : Procédure automatique de clôture
+- [ ] **Réouverture d'exercice** : Report à nouveau automatique
 
-- [ ] **modules/accounting/dialogs/** - Nouvelles fenêtres
-  - [ ] fiscal_year_dialog.py - Créer/modifier exercice
-  - [ ] journal_dialog.py - Créer/modifier journal
-  - [ ] account_dialog.py - Fiche compte
-  - [ ] entry_dialog.py - Saisie écriture (avec grille débit/crédit)
-  - [ ] entry_validation_dialog.py - Validation multi-écritures
-  - [ ] trial_balance_window.py - Affichage balance
-  - [ ] general_ledger_window.py - Affichage grand livre
-  - [ ] lettering_window.py - Interface lettrage
-  - [ ] bank_reconciliation_window.py - Rapprochement bancaire
+### Moyenne Priorité
+- [ ] **Lettrage automatique avancé** : Par référence, par montant, par date
+- [ ] **Rapprochement bancaire intelligent** : Matching algorithmique
+- [ ] **Gestion des échéances** : Relances clients automatiques
+- [ ] **Export FEC conforme** : Validation ANFC complète
+- [ ] **Piste d'audit Fichier** : Export complet avec horodatage
 
-- [ ] **Modules existants à migrer**
-  - [ ] pcg_list.py → Utiliser nouveau service PCGLoaderService
-  - [ ] ecriture_saisie.py → Utiliser JournalEntryService
-  - [ ] accounting_reports.py → Utiliser FinancialReportsService
-  - [ ] dossier_manager.py → Intégrer avec FiscalYear
-
-### Connexion API
-- [ ] **modules/api_client.py** - Client HTTP pour FastAPI
-  - [ ] GET/POST/PUT/DELETE wrappers
-  - [ ] Gestion authentification JWT
-  - [ ] Gestion erreurs API
-  - [ ] Timeout et retry
+### Basse Priorité
+- [ ] **Multi-devises** : Gestion des écarts de conversion
+- [ ] **Consolidation** : Regroupement de plusieurs dossiers
+- [ ] **Analytique avancée** : Clés de répartition, sous-sections
 
 ---
 
-## 🟡 PRIORITÉ 3 : MODULE CORE (PRÉREQUIS)
+## 📦 MODULES MÉTIER - À DÉVELOPPER
 
-### Multi-Tenancy
-- [ ] **core/models/company.py**
-  - [ ] Company (Société)
-  - [ ] Branch (Établissement/Succursale)
+### 1. Module VENTES (Sales) 🔴 PRIORITAIRE
+**Dépendance** : Finance ✔
+**Fichiers à créer** :
+```
+/workspace/sales/
+├── models/
+│   ├── quotation.py          # Devis
+│   ├── sale_order.py         # Bons de commande
+│   ├── invoice.py            # Factures clients
+│   └── delivery.py           # Bons de livraison
+├── services/
+│   ├── quotation_service.py
+│   ├── invoice_service.py
+│   └── sale_to_accounting.py # Génération écritures comptables
+├── api/
+│   └── routes_sales.py
+├── tests/
+└── fixtures/
+```
 
-- [ ] **core/models/user.py**
-  - [ ] Custom User Model
-  - [ ] RBAC (Rôles et permissions)
+**Fonctionnalités** :
+- [ ] Devis → Bon de commande → Facture
+- [ ] Relances automatiques
+- [ ] Statistiques ventes
+- [ ] Intégration comptable automatique (70x, 411x, 4457x)
 
-- [ ] **core/models/audit.py**
-  - [ ] AuditLog global (transverse)
+### 2. Module ACHATS (Purchases) 🔴 PRIORITAIRE
+**Dépendance** : Finance ✔
+**Fichiers à créer** :
+```
+/workspace/purchases/
+├── models/
+│   ├── rfq.py                # Demandes de prix
+│   ├── purchase_order.py     # Commandes fournisseurs
+│   ├── vendor_bill.py        # Factures fournisseurs
+│   └── receipt.py            # Réceptions
+├── services/
+│   ├── purchase_service.py
+│   ├── bill_service.py
+│   └── purchase_to_accounting.py # Génération écritures
+├── api/
+│   └── routes_purchases.py
+├── tests/
+└── fixtures/
+```
 
-### Authentification
-- [ ] **core/api/auth.py**
-  - [ ] Login/Logout
-  - [ ] JWT tokens
-  - [ ] Refresh tokens
-  - [ ] Password reset
+**Fonctionnalités** :
+- [ ] Demande de prix → Commande → Réception → Facture
+- [ ] Contrôle facture/commande/réception
+- [ ] Intégration comptable automatique (60x, 401x, 4456x)
+
+### 3. Module STOCK (Inventory) 🟡 MOYENNE PRIORITÉ
+**Dépendance** : Ventes + Achats
+**Fichiers à créer** :
+```
+/workspace/inventory/
+├── models/
+│   ├── product.py            # Articles
+│   ├── warehouse.py          # Entrepôts
+│   ├── stock_move.py         # Mouvements de stock
+│   └── stock_valuation.py    # Valorisation
+├── services/
+│   ├── product_service.py
+│   ├── move_service.py
+│   └── valuation_service.py
+├── api/
+│   └── routes_inventory.py
+├── tests/
+└── fixtures/
+```
+
+**Fonctionnalités** :
+- [ ] Gestion multi-entrepôts
+- [ ] Suivi des mouvements (entrées/sorties/transferts)
+- [ ] Valorisation (PMP, FIFO, LIFO)
+- [ ] Inventaires périodiques
+- [ ] Alertes stock minimum
+
+### 4. Module RESSOURCES HUMAINES (HR) 🟡 MOYENNE PRIORITÉ
+**Dépendance** : Finance (pour la paie)
+**Fichiers à créer** :
+```
+/workspace/hr/
+├── models/
+│   ├── employee.py           # Employés
+│   ├── contract.py           # Contrats
+│   ├── timesheet.py          # Feuilles de temps
+│   ├── leave.py              # Congés
+│   └── payroll.py            # Paie
+├── services/
+│   ├── employee_service.py
+│   ├── payroll_service.py
+│   └── hr_to_accounting.py   # Écritures de paie
+├── api/
+│   └── routes_hr.py
+├── tests/
+└── fixtures/
+```
+
+**Fonctionnalités** :
+- [ ] Gestion du personnel
+- [ ] Contrats de travail
+- [ ] Suivi des congés/absences
+- [ ] Bulletins de paie
+- [ ] Intégration comptable (64x, 421x, 431x, 444x)
+
+### 5. Module CRM 🟢 BASSE PRIORITÉ
+**Dépendance** : Aucune
+**Fichiers à créer** :
+```
+/workspace/crm/
+├── models/
+│   ├── lead.py               # Pistes
+│   ├── opportunity.py        # Opportunités
+│   ├── partner.py            # Partenaires
+│   └── activity.py           # Activités
+├── services/
+│   ├── crm_service.py
+│   └── pipeline_service.py
+├── api/
+│   └── routes_crm.py
+├── tests/
+└── fixtures/
+```
+
+**Fonctionnalités** :
+- [ ] Pipeline de ventes
+- [ ] Suivi des opportunités
+- [ ] Historique des interactions
+- [ ] Conversion Lead → Client
+
+### 6. Module PROJETS 🟢 BASSE PRIORITÉ
+**Dépendance** : CRM + Ventes
+**Fichiers à créer** :
+```
+/workspace/projects/
+├── models/
+│   ├── project.py            # Projets
+│   ├── task.py               # Tâches
+│   └── milestone.py          # Jalons
+├── services/
+│   ├── project_service.py
+│   └── task_service.py
+├── api/
+│   └── routes_projects.py
+├── tests/
+└── fixtures/
+```
+
+**Fonctionnalités** :
+- [ ] Gestion de projets
+- [ ] Planification des tâches
+- [ ] Suivi du temps passé
+- [ ] Facturation au temps passé
+
+### 7. Module PRODUCTIVITÉ 🟢 BASSE PRIORITÉ
+**Dépendance** : Tous les modules
+**Fichiers à créer** :
+```
+/workspace/productivity/
+├── models/
+│   ├── document.py           # GED
+│   ├── calendar.py           # Agenda
+│   └── notification.py       # Notifications
+├── services/
+│   ├── document_service.py
+│   └── notification_service.py
+├── api/
+│   └── routes_productivity.py
+├── tests/
+└── fixtures/
+```
+
+**Fonctionnalités** :
+- [ ] Gestion électronique des documents
+- [ ] Agenda partagé
+- [ ] Système de notifications
+- [ ] Tableaux de bord personnalisés
 
 ---
 
-## 🟢 PRIORITÉ 4 : AUTRES MODULES MÉTIER
+## 🔧 INFRASTRUCTURE TECHNIQUE - À AMÉLIORER
 
-### Module Ventes (sales/) - Phase 3
-- [ ] models/
-  - [ ] Customer
-  - [ ] Quotation
-  - [ ] SaleOrder
-  - [ ] Invoice
-  - [ ] Payment
-- [ ] services/
-  - [ ] invoice_service.py (génère écritures auto)
-  - [ ] payment_service.py
-- [ ] api/
-- [ ] tests/
+### Backend API
+- [ ] **API REST complète** : Endpoints pour tous les modèles
+- [ ] **Authentification JWT** : Login/Logout, refresh tokens
+- [ ] **Permissions RBAC** : Rôles et permissions granulaires
+- [ ] **Documentation Swagger/OpenAPI** : Auto-générée
+- [ ] **Rate limiting** : Protection contre les abus
 
-### Module Achats (purchases/) - Phase 4
-- [ ] models/
-  - [ ] Supplier
-  - [ ] PurchaseOrder
-  - [ ] Bill
-  - [ ] Payment
-- [ ] services/
-  - [ ] bill_service.py (génère écritures auto)
-- [ ] api/
-- [ ] tests/
+### Base de données
+- [ ] **Migrations Alembic** : Scripts de migration versionnés
+- [ ] **Backup automatique** : Sauvegarde quotidienne
+- [ ] **Indexation avancée** : Optimisation des requêtes
+- [ ] **Audit des données** : Qui a fait quoi et quand
 
-### Module Stock (inventory/) - Phase 5
-- [ ] models/
-  - [ ] Product
-  - [ ] Warehouse
-  - [ ] StockMove
-  - [ ] InventoryAdjustment
-- [ ] services/
-  - [ ] valuation_service.py (génère écritures auto)
-- [ ] api/
-- [ ] tests/
+### Tests & Qualité
+- [ ] **Tests d'intégration** : Scénarios complets
+- [ ] **Tests E2E** : Avec Playwright ou Selenium
+- [ ] **CI/CD** : GitHub Actions pour build/test/deploy
+- [ ] **Couverture > 90%** : Sur les modules critiques
+- [ ] **Linting** : Black, Flake8, MyPy
 
-### Module RH (hr/) - Phase 6
-- [ ] models/
-  - [ ] Employee
-  - [ ] Contract
-  - [ ] Payslip
-  - [ ] Leave
-- [ ] services/
-  - [ ] payroll_service.py (génère écritures auto)
-- [ ] api/
-- [ ] tests/
+### Performance
+- [ ] **Cache Redis** : Pour les données fréquemment consultées
+- [ ] **File d'attente Celery** : Tâches asynchrones
+- [ ] **Optimisation SQL** : Requêtes N+1 à éliminer
+- [ ] **Pagination** : Sur toutes les listes
 
 ---
 
-## 🔵 PRIORITÉ 5 : INFRASTRUCTURE & DEVOPS
+## 🖥️ FRONTEND - À DÉVELOPPER
 
-### Docker
-- [ ] **Dockerfile** - Image backend Python
-- [ ] **docker-compose.yml**
-  - [ ] Service postgres
-  - [ ] Service backend
-  - [ ] Service redis (cache/queue)
-  - [ ] service celery (tasks async)
-  - [ ] service flower (monitoring celery)
+### Modules PySide6 restants
+- [ ] **Module Ventes** : Interface complète (devis, commandes, factures)
+- [ ] **Module Achats** : Interface complète (commandes, factures)
+- [ ] **Module Stock** : Interface (produits, mouvements, inventaires)
+- [ ] **Module RH** : Interface (employés, congés, paie)
+- [ ] **Module CRM** : Interface (pipeline, opportunités)
+- [ ] **Module Projets** : Interface (tâches, planning)
 
-### CI/CD
-- [ ] **.github/workflows/ci.yml**
-  - [ ] Lint (black, flake8, pylint)
-  - [ ] Tests (pytest avec coverage)
-  - [ ] Build Docker
-  - [ ] Déploiement staging
-
-### Monitoring
-- [ ] **config/logging.py** - Configuration logging
-- [ ] Intégration Sentry (erreurs production)
-- [ ] Prometheus metrics (performance)
+### Améliorations UI/UX
+- [ ] **Thème sombre/clair** : Bascule utilisateur
+- [ ] **Responsive design** : Adaptation différentes résolutions
+- [ ] **Accessibilité** : Normes WCAG
+- [ ] **Internationalisation** : Traduction FR → EN (prévu après stabilisation)
 
 ---
 
-## 📊 ROADMAP GLOBALE
+## 📊 TABLEAU DE BORD & REPORTING
 
-| Phase | Module | Statut | Priorité | Jours estimés |
-|-------|--------|--------|----------|---------------|
-| 0 | Infrastructure | ✅ Partiel | CRITIQUE | - |
-| 1 | Core | ⏳ À faire | CRITIQUE | 5-7 |
-| 2 | Finance | 🔵 60% fait | CRITIQUE | 10-15 |
-| 3 | Sales | ⚪ Non commencé | HAUTE | 7-10 |
-| 4 | Purchases | ⚪ Non commencé | HAUTE | 5-7 |
-| 5 | Inventory | ⚪ Non commencé | HAUTE | 7-10 |
-| 6 | HR | ⚪ Non commencé | MOYENNE | 10-14 |
-| 7 | Productivity | ⚪ Non commencé | MOYENNE | 3-5 |
-| 8 | CRM | ⚪ Non commencé | MOYENNE | 5-7 |
-| 9 | Projects | ⚪ Non commencé | MOYENNE | 7-10 |
-| 10 | Reporting/BI | ⚪ Non commencé | BASSE | 10-15 |
+### Tableaux de bord à créer
+- [ ] **Dashboard Direction** : KPI globaux (CA, marge, trésorerie)
+- [ ] **Dashboard Commercial** : Ventes par période, par commercial
+- [ ] **Dashboard Achats** : Dépenses, fournisseurs principaux
+- [ ] **Dashboard RH** : Effectif, masse salariale, absentéisme
+- [ ] **Dashboard Projet** : Avancement, budget vs réel
 
-**Total estimé** : ~70-100 jours de développement
+### États légaux
+- [ ] **Bilan** : Actif/Passif
+- [ ] **Compte de résultat** : Produits/Charges
+- [ ] **Tableau des flux de trésorerie**
+- [ ] **Annexes comptables**
+- [ ] **Liasse fiscale** : Formulaire 2035 et suivants
 
 ---
 
-## 🎯 PROCHAINES ACTIONS IMMÉDIATES
+## 🚀 DÉPLOIEMENT & PRODUCTION
 
-1. [ ] Compléter l'API REST du module Finance (schemas + routes)
-2. [ ] Écrire tous les tests unitaires restants
-3. [ ] Configurer Alembic pour migrations
-4. [ ] Tester avec PostgreSQL en local
-5. [ ] Commencer refonte frontend PySide6 (onglets)
-6. [ ] Documenter API avec Swagger
+### Docker & Orchestration
+- [ ] **Dockerfile optimisé** : Multi-stage build
+- [ ] **docker-compose.yml** : Services PostgreSQL, Redis, etc.
+- [ ] **Kubernetes** : Déploiement scalable (optionnel)
+
+### Monitoring & Logs
+- [ ] **Logs centralisés** : ELK Stack ou équivalent
+- [ ] **Monitoring** : Prometheus + Grafana
+- [ ] **Alerting** : En cas d'erreur ou de performance dégradée
+
+### Sécurité
+- [ ] **HTTPS obligatoire** : Certificats SSL/TLS
+- [ ] **Protection CSRF/XSS** : Headers de sécurité
+- [ ] **Validation des entrées** : Sanitization systématique
+- [ ] **Chiffrement des données sensibles** : Mots de passe, données bancaires
 
 ---
 
-## 📞 SUPPORT & QUESTIONS
+## 📅 ROADMAP PROPOSÉE
 
-Pour toute question sur l'architecture ou l'implémentation :
-- Consulter `README_Coding_Projet.md` pour les principes directeurs
-- Vérifier les docstrings dans les services
-- Examiner les tests pour comprendre l'usage attendu
+### Phase 1 (Immédiat - 2 semaines)
+- Finaliser module Finance (liasses, budgets, clôtures)
+- Tests approfondis sur module Finance
+- Documentation utilisateur
+
+### Phase 2 (1 mois)
+- Module Ventes complet
+- Module Achats complet
+- Intégration comptable automatique
+
+### Phase 3 (2 mois)
+- Module Stock
+- Module RH (paie)
+- Tableaux de bord métiers
+
+### Phase 4 (3 mois)
+- Module CRM
+- Module Projets
+- Module Productivité
+
+### Phase 5 (4-6 mois)
+- Internationalisation (EN)
+- Optimisations performance
+- Préparation production
 
 ---
 
-**Note** : Ce fichier sera mis à jour régulièrement au fur et à mesure de l'avancement du projet.
+## 📝 NOTES IMPORTANTES
+
+1. **Priorité absolue** : La comptabilité doit être parfaite avant tout module métier
+2. **Tests obligatoires** : Aucun module ne sera validé sans tests TDD
+3. **Documentation** : Chaque fonctionnalité doit avoir sa doc utilisateur
+4. **PostgreSQL uniquement** : Plus de fallback SQLite
+5. **Multi-tenancy** : Architecture 1 dossier = 1 base PostgreSQL maintenue
+
+---
+
+*Dernière mise à jour : 24 Mai 2025*

@@ -1,5 +1,5 @@
 from PySide6.QtWidgets import (
-    QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLabel, QMessageBox, QSizePolicy
+    QWidget, QVBoxLayout, QHBoxLayout, QPushButton, QLabel, QMessageBox, QSizePolicy, QTabWidget
 )
 from PySide6.QtCore import Qt
 import requests
@@ -45,26 +45,59 @@ class AccountingModule(QWidget):
         super().__init__()
 
         self._refresh_dossiers_in_progress = False
-
-
-        self.layout = QVBoxLayout()
-        self.layout.setContentsMargins(12, 8, 12, 12)
-        self.layout.setSpacing(6)
-        self.setLayout(self.layout)
         self.child_windows = []
+        
+        # Layout principal avec onglets
+        self.layout = QVBoxLayout()
+        self.layout.setContentsMargins(0, 0, 0, 0)
+        self.layout.setSpacing(0)
+        self.setLayout(self.layout)
+        
+        # Widget d'onglets principal
+        self.tab_widget = QTabWidget()
+        self.tab_widget.setDocumentMode(True)
+        self.tab_widget.setMovable(False)
+        self.tab_widget.setStyleSheet("""
+            QTabWidget::pane {
+                border: 1px solid #d1d5db;
+                border-top: none;
+                background-color: white;
+            }
+            QTabBar::tab {
+                background-color: #f3f4f6;
+                border: 1px solid #d1d5db;
+                border-bottom: none;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                padding: 8px 16px;
+                margin-right: 2px;
+                font-weight: 500;
+            }
+            QTabBar::tab:selected {
+                background-color: white;
+                border-bottom: 1px solid white;
+                margin-bottom: -1px;
+            }
+            QTabBar::tab:hover:!selected {
+                background-color: #e5e7eb;
+            }
+        """)
+        
+        self.layout.addWidget(self.tab_widget)
+        
+        # Current dossier label (affiché en haut de chaque onglet)
         self.current_dossier_label = QLabel("Aucun dossier sélectionné")
-        self.current_dossier_label.setMinimumHeight(38)
-        self.current_dossier_label.setMaximumHeight(46)
+        self.current_dossier_label.setMinimumHeight(40)
+        self.current_dossier_label.setMaximumHeight(40)
         self.current_dossier_label.setAlignment(Qt.AlignLeft | Qt.AlignVCenter)
         self.current_dossier_label.setStyleSheet(
             """
             QLabel {
                 background-color: #174ea6;
                 color: white;
-                border: 1px solid #123d82;
-                border-radius: 4px;
-                padding: 5px 10px;
-                font-size: 17px;
+                border: none;
+                padding: 8px 16px;
+                font-size: 16px;
                 font-weight: 700;
             }
             """
