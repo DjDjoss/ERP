@@ -13,13 +13,15 @@ from finance.services.journal_entry_service import JournalEntryService, JournalE
 class TestJournalEntryService:
     """Tests pour le service d'écritures comptables"""
 
-    @pytest.fixture
+    @pytest.fixture(scope="function")
     def setup_data(self, db_session, sample_dossier_id):
         """Prépare les données de base pour les tests"""
-        # Créer un exercice
+        # Créer un exercice avec label unique pour chaque test
+        import uuid
+        unique_id = str(uuid.uuid4())[:8]
         fiscal_year = FiscalYear(
             dossier_id=sample_dossier_id,
-            label="Exercice 2025",
+            label=f"Exercice Test {unique_id}",
             start_date=date(2025, 1, 1),
             end_date=date(2025, 12, 31),
             status="open",
@@ -30,30 +32,30 @@ class TestJournalEntryService:
         # Créer un journal
         journal = AccountingJournal(
             dossier_id=sample_dossier_id,
-            code="OD",
-            label="Opérations diverses",
+            code=f"OD-{unique_id}",
+            label=f"Opérations diverses {unique_id}",
             journal_type="general",
         )
         db_session.add(journal)
         db_session.flush()
         
-        # Créer des comptes
+        # Créer des comptes avec numéros uniques pour éviter les conflits
         account_512 = AccountingAccount(
             dossier_id=sample_dossier_id,
-            number="512000",
+            number=f"512000-{unique_id}",
             label="Banque",
             account_class="5",
             account_type="bank",
         )
         account_706 = AccountingAccount(
             dossier_id=sample_dossier_id,
-            number="706000",
+            number=f"706000-{unique_id}",
             label="Prestations de services",
             account_class="7",
         )
         account_4457 = AccountingAccount(
             dossier_id=sample_dossier_id,
-            number="445700",
+            number=f"445700-{unique_id}",
             label="TVA collectée",
             account_class="4",
         )

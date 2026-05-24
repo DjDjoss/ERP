@@ -34,7 +34,7 @@ class TestFiscalYear:
         # Exercice ouvert
         fy_open = FiscalYear(
             dossier_id=sample_dossier_id,
-            label="Ouvert",
+            label="Exercice Ouvert",
             start_date=date(2025, 1, 1),
             end_date=date(2025, 12, 31),
             status="open",
@@ -47,7 +47,7 @@ class TestFiscalYear:
         # Exercice fermé
         fy_closed = FiscalYear(
             dossier_id=sample_dossier_id,
-            label="Fermé",
+            label="Exercice Fermé",
             start_date=date(2024, 1, 1),
             end_date=date(2024, 12, 31),
             status="closed",
@@ -61,7 +61,7 @@ class TestFiscalYear:
         """Test de la méthode contains_date"""
         fiscal_year = FiscalYear(
             dossier_id=sample_dossier_id,
-            label="Exercice 2025",
+            label="Exercice Date Test",
             start_date=date(2025, 1, 1),
             end_date=date(2025, 12, 31),
         )
@@ -83,7 +83,7 @@ class TestFiscalYear:
         """Test de l'unicité du label par dossier"""
         fy1 = FiscalYear(
             dossier_id=sample_dossier_id,
-            label="Exercice 2025",
+            label="Exercice Unique",
             start_date=date(2025, 1, 1),
             end_date=date(2025, 12, 31),
         )
@@ -93,7 +93,7 @@ class TestFiscalYear:
         # Tentative de créer un deuxième exercice avec le même label
         fy2 = FiscalYear(
             dossier_id=sample_dossier_id,
-            label="Exercice 2025",
+            label="Exercice Unique",
             start_date=date(2025, 4, 1),
             end_date=date(2026, 3, 31),
         )
