@@ -18,7 +18,7 @@ from sqlalchemy import (
     func,
 )
 
-from backend.connection_manager import Base
+from core.db_postgresql import Base
 
 
 class AuditLog(Base):
