@@ -14,7 +14,7 @@ from sqlalchemy import (
 )
 from sqlalchemy.orm import relationship
 
-from backend.connection_manager import Base
+from core.db_postgresql import Base
 
 
 class Asset(Base):

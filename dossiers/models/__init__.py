@@ -95,9 +95,24 @@ class Dossier(Base):
     created_by = Column(String(100), nullable=True)
     
     # Relations
-    fiscal_years = relationship("FiscalYear", back_populates="dossier", cascade="all, delete-orphan")
-    journals = relationship("AccountingJournal", back_populates="dossier", cascade="all, delete-orphan")
-    accounts = relationship("AccountingAccount", back_populates="dossier", cascade="all, delete-orphan")
+    # Note: La relation avec Dossier est gérée via dossier_id uniquement
+    # Pas de back_populates car Dossier et FiscalYear sont dans des modules/bases différents
+    fiscal_years = relationship(
+        "FiscalYear",
+        primaryjoin="Dossier.id == foreign(FiscalYear.dossier_id)",
+        cascade="all, delete-orphan",
+        overlaps="journals,accounts"
+    )
+    journals = relationship(
+        "AccountingJournal",
+        primaryjoin="Dossier.id == foreign(AccountingJournal.dossier_id)",
+        cascade="all, delete-orphan"
+    )
+    accounts = relationship(
+        "AccountingAccount",
+        primaryjoin="Dossier.id == foreign(AccountingAccount.dossier_id)",
+        cascade="all, delete-orphan"
+    )
     
     def __repr__(self):
         return f"<Dossier(id={self.id}, nom='{self.nom_entreprise}', siren='{self.siren}')>"

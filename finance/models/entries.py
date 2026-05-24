@@ -27,7 +27,7 @@ from sqlalchemy import (
 )
 from sqlalchemy.orm import relationship
 
-from backend.connection_manager import Base
+from core.db_postgresql import Base
 
 
 class AccountingEntry(Base):
@@ -227,6 +227,7 @@ class AccountingEntryLine(Base):
     # Relations
     entry = relationship("AccountingEntry", back_populates="lines")
     account = relationship("AccountingAccount", backref="entry_lines")
+    bank_reconciliation = relationship("BankReconciliation", back_populates="entry_lines")
 
     def __repr__(self):
         return f"<AccountingEntryLine(id={self.id}, account='{self.account_number}', debit={self.debit}, credit={self.credit})>"
