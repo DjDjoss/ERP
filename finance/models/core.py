@@ -40,10 +40,10 @@ class FiscalYear(Base):
     updated_at = Column(DateTime(timezone=True), nullable=True, onupdate=func.now())
 
     # Relation vers Dossier (définie dynamiquement car Dossier est dans un autre module)
+    # Note: back_populates désactivé pour éviter les erreurs de chargement dans les tests isolés
     dossier = relationship(
         "Dossier",
-        foreign_keys="[FiscalYear.dossier_id]",
-        back_populates="fiscal_years",
+        primaryjoin="FiscalYear.dossier_id == foreign(Dossier.id)",
         overlaps="journals,accounts"
     )
     journals = relationship("AccountingJournal", back_populates="fiscal_year", cascade="all, delete-orphan")

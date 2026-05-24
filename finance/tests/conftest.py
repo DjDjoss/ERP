@@ -6,13 +6,13 @@ Configuration de pytest pour le module Finance
 import pytest
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from backend.connection_manager import Base
+from core.db_postgresql import Base as CoreBase
 
 
 @pytest.fixture(scope="session")
 def test_engine():
     """Crée un moteur de base de données de test en mémoire"""
-    # Importer tous les modèles pour qu'ils soient enregistrés dans Base.metadata
+    # Importer tous les modèles pour qu'ils soient enregistrés dans CoreBase.metadata
     from dossiers.models import Dossier, DossierDocument, DossierContact
     from finance.models import (
         FiscalYear, AccountingJournal, AccountingAccount, AnalyticSection, AnalyticAxis,
@@ -24,7 +24,7 @@ def test_engine():
     )
     
     engine = create_engine("sqlite:///:memory:", echo=False)
-    Base.metadata.create_all(bind=engine)
+    CoreBase.metadata.create_all(bind=engine)
     return engine
 
 
